@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Любовь Карцивадзе](https://up.htmlacademy.ru/htmlcss/30/user/1668659).
-* Наставник: Максим Кузнецов [https://htmlacademy.ru/profile/knenkne].
+* Наставник: [Максим Кузнецов] (https://htmlacademy.ru/profile/knenkne).
 
 ---
 
