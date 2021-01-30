@@ -10,8 +10,9 @@
     <link rel="apple-touch-icon" href="img/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
+      <div class="upper-bar">
       <a href="#" class="logo"><h1>Техномарт</h1></a>
       <form
         class="search-field"
@@ -29,6 +30,8 @@
       <a class="header-btn-bookmarks" href="#">Закладки: <span>0</span></a>
       <a class="header-btn-cart" href="#">Корзина: <span>0</span></a>
       <a class="header-btn-order" href="#">Оформить заказ</a>
+    </div>
+    <div class="main-bar">
       <h1 class="main-header-description">
         Интернет-магазин строительных материалов и инструментов для ремонта
       </h1>
@@ -63,6 +66,7 @@
           </li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="container">
       <h1>Техномарт</h1>
@@ -93,10 +97,13 @@
           </li>
         </ul>
         <section class="slider">
-        <button class="button slider-btn-back" type="button" disabled>
-          Назад
+        <button class="button slider-btn-back" type="button" disabled><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
+          </svg>
         </button>
-        <button class="button slider-btn-forward" type="button">Вперед</button>
+        <button class="button slider-btn-forward" type="button"><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
+          </svg></button>
         <a class="button open-catalog-btn" href="catalog.html">ОТКРЫТЬ КАТАЛОГ</a>
         <div class="slider slide-1">
         <h3>ПЕРФОРАТОРЫ</h3>
@@ -120,19 +127,26 @@
       </div>
       </section>
       </section>
+      <div class="goods-container">
       <section class="popular-goods">
         <h2>ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
         <a class="button all-popular-goods-btn" href="#">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
         <article class="product-card">
           <h3>Перфоратор BOSCH BFG 9000</h3>
-          <a class="price" href="#">25500 Р.</a>
-          <span class="old-price">32500 Р.</span>
+          
           <img
             src="img/items-bfg9000.jpg"
             alt="Перфоратор BOSCH BFG 9000"
             width="184"
             height="164"
           />
+          <a class="price" href="#">25500 Р.</a>
+          <span class="old-price">32500 Р.</span>
+
+          <div class="model-item-finalize">
+            <a href="order.html" class="button-goods-buy">Купить</a>
+            <a href="#" class="button-goods-bookmarks">В закладки</a>
+          </div>
         </article>
         <article class="product-card">
           <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -144,6 +158,10 @@
           />
           <a class="price" href="#">15500 Р.</a>
           <span class="old-price">22500 Р.</span>
+          <div class="model-item-finalize">
+            <a href="order.html" class="button-goods-buy">Купить</a>
+            <a href="#" class="button-goods-bookmarks">В закладки</a>
+          </div>
         </article>
         <article class="product-card">
           <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -155,6 +173,10 @@
           />
           <a class="price" href="#">25500 Р.</a>
           <span class="old-price">30500 Р.</span>
+          <div class="model-item-finalize">
+            <a href="order.html" class="button-goods-buy">Купить</a>
+            <a href="#" class="button-goods-bookmarks">В закладки</a>
+          </div>
         </article>
         <article class="product-card">
           <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -166,8 +188,14 @@
           />
           <a class="price" href="#">12500 Р.</a>
           <span class="old-price">32500 P.</span>
+          <div class="model-item-finalize">
+            <a href="order.html" class="button-goods-buy">Купить</a>
+            <a href="#" class="button-goods-bookmarks">В закладки</a>
+          </div>
         </article>
       </section>
+    </div>
+      <div class="brands-container">
       <section class="popular-brands">
         <h2>ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
         <a class="button all-brands-btn" href="#">ВСЕ ПРОИЗВОДИТЕЛИ</a>
@@ -206,6 +234,7 @@
           <img src="img/logo-metabo.png" alt="Metabo" width="206" height="73" />
         </a>
       </section>
+    </div>
       <section class="additional-services">
         <h2>Дополнительные услуги</h2>
         <!--Потом спрятать-->
@@ -264,9 +293,60 @@
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="partners-list">
-            <li class="partners-item"><a href="#">Деловые линии</a></li>
-            <li class="partners-item"><a href="#">Автотрейдинг</a></li>
-            <li class="partners-item"><a href="#">ЖелДорЭкспедиция</a></li>
+            <li class="partners-item"><a href="#"><svg width="25" height="2" viewBox="0 0 25 2" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="25" height="2" fill="url(#pattern0)"/>
+              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="2">
+              <rect width="25" height="2" fill="url(#pattern1)"/>
+              </mask>
+              <g mask="url(#mask0)">
+              <rect width="25" height="2" fill="#EE3643"/>
+              </g>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="scale(0.04 0.5)"/>
+              </pattern>
+              <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="scale(0.04 0.5)"/>
+              </pattern>
+              <image id="image0" width="25" height="2" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAACCAYAAACt+Hc7AAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJx1kTtLA0EUhT+jEvGBgilULLZQsTAQFMRSY2ETRKKCr2azeQm767K7QcRWsLEQLEQbX4X/QFvBVkEQFEFE/Am+GgnrnURIEJ1l9n6cmXOZOQOhhGlYXl0MLNt3kxNxbW5+QQu/UE8nbUQI64bnjE1NJfh3fN5Ro+ptVPX6f9+foymd8QyoaRAeNhzXFx4VTqz6juIt4YiR19PCh8IDrhxQ+ErpqTI/K86V+V2xO5Mch5DqqeWqOFXFRt61hPuFeyyzYPycR92kOWPPTkvtktmNR5IJ4mikKLCMiU9Uqi2Z/e2LlXyTrIjHkL/DGq44cuTFOyBqQbpmpGZFz8hnsqZy/52nlx0aLHdvjkP9UxC89UJ4B4rbQfB1FATFY6h9hAu74l+RnEY+RN+uaD0H0LoBZ5cVLbUL55vQ8eDorl6SamWGsll4PYWWeWi/gcbFclY/65zcw8y6PNE17O1Dn+xvXfoGotpn31B9QqMAAAA+SURBVHicdY3LCQAgDENfHNGL+08SD620ghZCQ8hHnsu8ToD77wLJP57DHZ4RhSfYOuhaBbATtVNDvsckEGxKeBmqYQvrQQAAAABJRU5ErkJggg=="/>
+              </defs>
+              </svg>Деловые линии</a></li>
+            <li class="partners-item"><a href="#"><svg width="25" height="2" viewBox="0 0 25 2" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="25" height="2" fill="url(#pattern0)"/>
+              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="2">
+              <rect width="25" height="2" fill="url(#pattern1)"/>
+              </mask>
+              <g mask="url(#mask0)">
+              <rect width="25" height="2" fill="#EE3643"/>
+              </g>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="scale(0.04 0.5)"/>
+              </pattern>
+              <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="scale(0.04 0.5)"/>
+              </pattern>
+              <image id="image0" width="25" height="2" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAACCAYAAACt+Hc7AAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJx1kTtLA0EUhT+jEvGBgilULLZQsTAQFMRSY2ETRKKCr2azeQm767K7QcRWsLEQLEQbX4X/QFvBVkEQFEFE/Am+GgnrnURIEJ1l9n6cmXOZOQOhhGlYXl0MLNt3kxNxbW5+QQu/UE8nbUQI64bnjE1NJfh3fN5Ro+ptVPX6f9+foymd8QyoaRAeNhzXFx4VTqz6juIt4YiR19PCh8IDrhxQ+ErpqTI/K86V+V2xO5Mch5DqqeWqOFXFRt61hPuFeyyzYPycR92kOWPPTkvtktmNR5IJ4mikKLCMiU9Uqi2Z/e2LlXyTrIjHkL/DGq44cuTFOyBqQbpmpGZFz8hnsqZy/52nlx0aLHdvjkP9UxC89UJ4B4rbQfB1FATFY6h9hAu74l+RnEY+RN+uaD0H0LoBZ5cVLbUL55vQ8eDorl6SamWGsll4PYWWeWi/gcbFclY/65zcw8y6PNE17O1Dn+xvXfoGotpn31B9QqMAAAA+SURBVHicdY3LCQAgDENfHNGL+08SD620ghZCQ8hHnsu8ToD77wLJP57DHZ4RhSfYOuhaBbATtVNDvsckEGxKeBmqYQvrQQAAAABJRU5ErkJggg=="/>
+              </defs>
+              </svg>Автотрейдинг</a></li>
+            <li class="partners-item"><a href="#"><svg width="25" height="2" viewBox="0 0 25 2" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="25" height="2" fill="url(#pattern0)"/>
+              <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="25" height="2">
+              <rect width="25" height="2" fill="url(#pattern1)"/>
+              </mask>
+              <g mask="url(#mask0)">
+              <rect width="25" height="2" fill="#EE3643"/>
+              </g>
+              <defs>
+              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="scale(0.04 0.5)"/>
+              </pattern>
+              <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="scale(0.04 0.5)"/>
+              </pattern>
+              <image id="image0" width="25" height="2" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAACCAYAAACt+Hc7AAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJx1kTtLA0EUhT+jEvGBgilULLZQsTAQFMRSY2ETRKKCr2azeQm767K7QcRWsLEQLEQbX4X/QFvBVkEQFEFE/Am+GgnrnURIEJ1l9n6cmXOZOQOhhGlYXl0MLNt3kxNxbW5+QQu/UE8nbUQI64bnjE1NJfh3fN5Ro+ptVPX6f9+foymd8QyoaRAeNhzXFx4VTqz6juIt4YiR19PCh8IDrhxQ+ErpqTI/K86V+V2xO5Mch5DqqeWqOFXFRt61hPuFeyyzYPycR92kOWPPTkvtktmNR5IJ4mikKLCMiU9Uqi2Z/e2LlXyTrIjHkL/DGq44cuTFOyBqQbpmpGZFz8hnsqZy/52nlx0aLHdvjkP9UxC89UJ4B4rbQfB1FATFY6h9hAu74l+RnEY+RN+uaD0H0LoBZ5cVLbUL55vQ8eDorl6SamWGsll4PYWWeWi/gcbFclY/65zcw8y6PNE17O1Dn+xvXfoGotpn31B9QqMAAAA+SURBVHicdY3LCQAgDENfHNGL+08SD620ghZCQ8hHnsu8ToD77wLJP57DHZ4RhSfYOuhaBbATtVNDvsckEGxKeBmqYQvrQQAAAABJRU5ErkJggg=="/>
+              </defs>
+              </svg>ЖелДорЭкспедиция</a></li>
           </ul>
           <a class="button company-more-about-btn" href="#"
             >ПОДРОБНЕЕ О КОМПАНИИ</a
@@ -325,8 +405,12 @@
             ></textarea>
           </p>
           <p class="contact-form-item">
+            <div class="send-btn-container">
             <button class="button send-btn" type="submit">ОТПРАВИТЬ</button>
-            <button class="close-btn" type="button">Закрыть</button>
+          </div>
+            <button class="close-btn" type="button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
+              </svg></button>
           </p>
         </form>
       </section>
@@ -339,7 +423,9 @@
           height="449"
           alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
         />
-        <button class="close-btn" type="button">Закрыть</button>
+        <button class="close-btn" type="button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
+          </svg></button>
       </section>
     </main>
     <footer class="main-footer">
@@ -390,15 +476,24 @@
         © 2010–2017 Компания «Техномарт» Все права защищены
       </p>
       <section class="footer-socials">
-        <ul>
+        <ul class="footer-socials-list">
           <li class="social-btn">
-            <a href="#">Вконтакте</a>
+            <a href="#"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1627 1.4839C33.6533 1.4839 42.9683 10.5873 42.9683 21.8169C42.9683 33.0461 33.6533 42.1494 22.1627 42.1494C10.6721 42.1494 1.35714 33.0461 1.35714 21.8169C1.35714 10.5873 10.6721 1.4839 22.1627 1.4839Z" fill="#212A3A"/>
+              <path d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z" fill="white"/>
+              </svg></a>
           </li>
           <li class="social-btn">
-            <a href="#">Фейсбук</a>
+            <a href="#"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1232 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1232 42.1494 21.8938 42.1494C10.6643 42.1494 1.56108 33.0461 1.56108 21.8169C1.56108 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
+              <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white"/>
+              </svg></a>
           </li>
           <li class="social-btn">
-            <a href="#">Инстаграм</a>
+            <a href="#"><svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.8938 1.4839C33.1233 1.4839 42.2265 10.5873 42.2265 21.8169C42.2265 33.0461 33.1233 42.1494 21.8938 42.1494C10.6643 42.1494 1.56112 33.0461 1.56112 21.8169C1.56112 10.5873 10.6643 1.4839 21.8938 1.4839Z" fill="#212A3A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z" fill="white"/>
+</svg></a>
           </li>
         </ul>
       </section>
