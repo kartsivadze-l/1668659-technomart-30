@@ -61,11 +61,21 @@
     /*Backgrounds*/
     --bunting: #293449;
     --grey: #888888;
-    
+    --linen: #F9F5F0;
+
+
 
 }
 
 /*Global*/
+body {
+    background-color: red;
+}
+
+img {
+    max-width: 100%;
+}
+
 .search-field {
 font-family: Cuprum;
 font-style: normal;
@@ -173,7 +183,8 @@ color: var(--white);
     font-weight: normal;
     font-size: 30px;
     line-height: 30px;
-    color: var(--china-blue);  
+    color: var(--china-blue); 
+    background-color: var(--linen); 
 }
 .all-popular-goods-btn,
 .all-brands-btn {
@@ -201,13 +212,19 @@ color: var(--white);
 .price {
    font-size: 17px;
    line-height: 18px;
-   color: var(--black);
+   color: var(--white);
+   background-color: var(--amaranth);
+
 }
 
 .old-price {
 font-size: 17px;
 line-height: 18px;
 color: var(--dark-grey);
+}
+
+.additional-services {
+    background-color: var(--alice-blue);
 }
 
 .additional-services h3 {
@@ -307,6 +324,13 @@ color: var(--alice-blue);
     font-size: 18px;
     line-height: 24px;
      color: var(--salomie); 
+}
+
+.footer-1 {
+    background-color: --china-blue;
+}
+.footer-2 {
+background-color: var(--bunting);
 }
 
 .footer-technomart-copyright,
