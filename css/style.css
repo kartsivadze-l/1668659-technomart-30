@@ -79,8 +79,12 @@
   --midnight-express: #1d2739;
   --black-russian: #161d29;
   --radical-red: #ff5357;
+  --old-lace: #f7f3ec;
+  --chambray: #3d546f;
   /*Shadows*/
   --bilbao: #367315;
+  /*Borders*/
+  --whisper: #e5e5e5;
 }
 
 /*Global*/
@@ -113,17 +117,28 @@ img {
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
+.upper-icons,
+.upper-icons:visited,
+.upper-icons:active {
+  fill: rgba(255, 255, 255, 0.5);
+}
+
+.upper-icons:hover {
+  fill: var(--white);
+}
+
 .main-bar {
   background-color: var(--alice-blue);
 }
 
-.search-field {
+.colortext {
   font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  color: var(--white);
+  color: var(--white); /*Как добиться,чтобы текст все-таки стал белым?*/
+  background-color: var(--bunting);
 }
 
 .search-field:active {
@@ -144,6 +159,16 @@ img {
   font-size: 18px;
   line-height: 24px;
   color: var(--white);
+}
+
+.header-btn-cart-full {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--white);
+  background-color: var(--amaranth);
 }
 
 .header-btn-bookmarks:active {
@@ -200,6 +225,13 @@ img {
   line-height: 21px;
   color: var(--black);
 }
+
+.user-block-options-container {
+  background-color: var(--white);
+  width: 299px;
+}
+
+/*Почему не белеет фон контейнера?*/
 
 .login-btn {
   width: 121px;
@@ -284,16 +316,16 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
-  background-color: rgba (var(--white), 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   width: 135px;
 }
 
 .feature-item-btn:hover {
-  background-color: rgba (var(--silver), 0.3);
+  background-color: rgba(197, 197, 197, 0.3);
 }
 
 .feature-item-btn:active {
-  background-color: rgba (var(--dark-grey), 0.3);
+  background-color: rgba(169, 169, 169, 0.3);
 }
 
 .slider h3 {
@@ -345,6 +377,35 @@ img {
 }
 */
 
+.user-block-name {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+.user-icons:hover {
+  fill: var(--chambray);
+}
+
+.user-icons:active {
+  fill: var(--silver);
+}
+
+/*.orders,
+.profile {
+font-family: Cuprum, Arial, sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 18px;
+color: var(--gulf-blue);
+}
+*/
+
 .popular-goods h2,
 .popular-brands h2 {
   font-family: Cuprum, Arial, sans-serif;
@@ -372,9 +433,11 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
+  border: 1px solid var(--whisper);
+  width: 220px;
 }
 
-.product-card h2 {
+.product-card h3 {
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
@@ -424,7 +487,8 @@ img {
   border: 3px solid var(--link-water);
 }
 
-.additional-services {
+.additional-services,
+.perforators-about {
   background-color: var(--alice-blue);
 }
 
@@ -438,7 +502,7 @@ img {
 }
 
 .additional-services p {
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -455,7 +519,7 @@ img {
   color: var(--china-blue);
 }
 .service-slide p {
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -483,7 +547,7 @@ img {
 }
 
 .company-info p {
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
@@ -551,7 +615,7 @@ img {
   background-color: var(--white);
 }
 .contact-form-item label {
-  font-family: Cuprum;
+  font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -648,4 +712,245 @@ img {
 .footer-feedback a:active,
 .footer-copyright a:active {
   color: var(--amaranth);
+}
+
+.social-bg:hover,
+.social-bg:active {
+  fill: var(--amaranth);
+}
+
+/*Каталог*/
+
+.personal-info,
+.personal-info:visited {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--gulf-blue);
+}
+
+.personal-info:hover {
+  color: var(--amaranth);
+}
+.user-block-name:active,
+.personal-info:active {
+  color: var(--silver);
+}
+
+.circle-bg:hover {
+  fill: var(--amaranth);
+}
+
+.circle-bg:active {
+  fill: var(--silver);
+}
+
+.category-title {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--gulf-blue);
+  background-color: var(--alice-blue);
+  width: 940px;
+}
+
+.filter-title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+  background-color: var(--old-lace);
+  width: 220px;
+}
+
+.pricing {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--black);
+  background-color: var(--old-lace);
+  width: 95px;
+}
+
+.show-btn {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+  background-color: var(--white);
+  border: 1px solid var(--whisper);
+  width: 220px;
+}
+
+.breadcrumbs,
+.sort-by,
+.paginator {
+  list-style: none;
+}
+
+.breadcrumbs-item a,
+.sort-by-option a,
+.paginator-link a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+}
+
+.sorting-bar h2,
+.sort-by-option a {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sort-by-option a {
+  color: var(--silver);
+  border-bottom: 1px dotted var(--amaranth);
+}
+
+.sort-by-option a:hover {
+  color: var(--black);
+  border-bottom: 1px solid var(--amaranth);
+}
+
+.sort-by-option a:active {
+  color: var(--amaranth);
+  border-bottom: none;
+}
+
+.triangle-bg:hover {
+  fill: var(--black);
+}
+
+.triangle-bg:active {
+  fill: var(--amaranth);
+}
+
+.sorting-bar {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
+  background-color: var(--old-lace);
+  width: 700px;
+}
+
+.filter-container {
+  width: 22px;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-by-header {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--black);
+  border-top: 1px solid var(--whisper);
+  width: 220px;
+}
+
+.filter-by-header:first-child {
+  border-top: none;
+}
+
+.charging-radio {
+  color: var(--silver);
+}
+
+.added-to-card-container {
+  background-color: var(--white);
+  width: 620px;
+}
+
+.added-to-card-container p {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--black);
+}
+
+.cart-btns-container {
+  background-color: var(--white-smoke);
+  width: 620px;
+}
+
+.btn-continue-shopping,
+.btn-order {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--black);
+  width: 192px;
+}
+
+.btn-continue-shopping {
+  color: var(--white);
+  background-color: var(--amaranth);
+}
+
+.paginator-link {
+  border: 1px solid var(--whisper);
+  border-radius: 2px;
+  width: 38px;
+  background-color: var(--white);
+}
+
+.paginator-link:hover {
+  border: 1px solid var(--silver);
+}
+
+.paginator-link:active {
+  border: 1px solid var(--amaranth);
+}
+
+.paginator-link:first-child {
+  background-color: var(--amaranth);
+}
+
+.paginator-link:last-child {
+  width: 140px;
+}
+
+.perforators-about-title {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--black);
+}
+
+.perforators-about-info {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--black);
 }
