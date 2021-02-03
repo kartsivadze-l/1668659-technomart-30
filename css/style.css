@@ -89,9 +89,16 @@
 
 /*Global*/
 
+.page {
+  height: 100%;
+}
+
 .page-body {
-  min-width: 1200px;
+  /*min-width: 1200px;*/
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   background-color: var(--white);
+  min-height: 100%;
 }
 
 a {
@@ -103,8 +110,16 @@ img {
   height: auto;
 }
 
-.upper-bar {
+.upper-bar-wrapper {
   background-color: var(--bunting);
+}
+
+.upper-bar {
+  width: 940px;
+  margin-left: 130px;
+  margin-right: 130px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
 }
 
 .logo h1 {
@@ -114,17 +129,26 @@ img {
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
   box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
-
+/*
 .upper-icons,
 .upper-icons:visited,
 .upper-icons:active {
   fill: rgba(255, 255, 255, 0.5);
 }
+*/
 
 .upper-icons:hover {
   fill: var(--white);
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 120px 0px;
 }
 
 .main-bar {
@@ -198,6 +222,11 @@ img {
   color: var(--amaranth);
 }
 
+.mid-header {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
 .main-bar address {
   font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
@@ -228,18 +257,20 @@ img {
 
 .user-block-options-container {
   background-color: var(--white);
-  width: 299px;
+  /*width: 299px;*/
 }
 
 /*Почему не белеет фон контейнера?*/
 
-.login-btn {
-  width: 121px;
+/*.login-btn {
+ width: 121px;
 }
+*/
 
-.sign-in-btn {
+/*.sign-in-btn {
   width: 150px;
 }
+*/
 
 .login-btn,
 .sign-in-btn {
@@ -260,6 +291,8 @@ img {
 .site-nav {
   list-style: none;
   background-color: var(--gulf-blue);
+  display: grid;
+  grid-template-columns: repeat(7, auto);
 }
 
 .site-nav-item a {
@@ -281,6 +314,15 @@ img {
   background-color: var(--midnight-express);
 }
 
+.features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
 .feature-item {
   font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
@@ -288,27 +330,42 @@ img {
   font-size: 24px;
   line-height: 30px;
   color: var(--white);
-  width: 300px;
+  padding: 20px;
 }
 
 .feature-item:first-child {
   background-color: var(--golden-tainoi-1);
-}
-
-.feature-item:last-child {
-  background-color: var(--golden-tainoi);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 .feature-item:nth-child(2) {
   background-color: var(--summer-sky);
+  grid-column: 2 / 3;
+  grid-row: 1 /2;
 }
 
 .feature-item:nth-child(3) {
   background-color: var(--plum);
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
 }
 
 .feature-item:nth-child(4) {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+.feature-item:nth-child(5) {
   background-color: var(--de-york);
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.feature-item:last-child {
+  background-color: var(--golden-tainoi);
+  grid-column: 3 / 4;
+  grid-row: -1 / -2;
 }
 
 .feature-item-btn {
@@ -346,6 +403,14 @@ img {
   color: var(--white);
 }
 
+.slider h3,
+.slider p {
+  z-index: 1;
+}
+.slide-1 {
+  background-image: url(..img/.slide-1-perforator.jpg);
+}
+
 .open-catalog-btn:hover {
   background-color: var(--mahogany);
 }
@@ -377,12 +442,24 @@ img {
 }
 */
 
+.all-popular-brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.all-popular-brands a {
+  outline: 1px solid var(--whisper);
+  outline-offset: -1px;
+}
+
 .user-block-name {
   font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
-  line-height: 21px;
+  line-height: 21px;‰
   color: var(--black);
   background-color: var(--white);
 }
@@ -416,6 +493,7 @@ color: var(--gulf-blue);
   color: var(--china-blue);
   background-color: var(--linen);
 }
+
 .open-catalog-btn,
 .all-popular-goods-btn,
 .all-brands-btn {
@@ -425,16 +503,23 @@ color: var(--gulf-blue);
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
-  width: 192px;
+  /*width: 192px;*/
   background-color: var(--amaranth);
+}
+
+.all-product-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .product-card {
   font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
-  border: 1px solid var(--whisper);
-  width: 220px;
+  outline: 1px solid var(--whisper);
+  outline-offset: -1px;
+  /*width: 220px;*/
 }
 
 .product-card h3 {
@@ -475,7 +560,7 @@ color: var(--gulf-blue);
 .button-goods-bookmarks {
   color: var(--gulf-blue);
   border: 3px solid var(--apple);
-  width: 135px;
+  /*width: 135px;*/
 }
 
 .button-goods-bookmarks:hover {
@@ -487,9 +572,14 @@ color: var(--gulf-blue);
   border: 3px solid var(--link-water);
 }
 
-.additional-services,
+.additional-services-wrapper,
 .perforators-about {
   background-color: var(--alice-blue);
+  min-width: 100%;
+}
+
+.additional-services-wrapper button {
+  width: 240px;
 }
 
 .additional-services h3 {
@@ -507,6 +597,20 @@ color: var(--gulf-blue);
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  color: var(--black);
+}
+
+.additional-services-btn-wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.service-titles {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
   color: var(--black);
 }
 
@@ -591,12 +695,19 @@ color: var(--gulf-blue);
   background-color: var(--white);
 }
 
-.company-more-about-btn {
+/*.company-more-about-btn {
   width: 220px;
 }
+*/
 
-.lost-help-btn {
+/*.lost-help-btn {
   width: 300px;
+}
+*/
+.company-info-wrapper {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  column-gap: 20px;
 }
 
 .company-more-about-btn,
@@ -681,11 +792,39 @@ color: var(--gulf-blue);
   opacity: 0.5;
 }
 
-.footer-1 {
+.footer-1-wrapper {
   background-color: var(--china-blue);
 }
-.footer-2 {
+
+.footer-2-wrapper {
   background-color: var(--bunting);
+}
+
+.footer-1,
+.footer-2 {
+  margin-left: 130px;
+  margin-right: 130px;
+}
+
+.footer-2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.footer-nav-1,
+.footer-nav-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.footer-nav-list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+}
+
+.footer-catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
 }
 
 .footer-technomart-copyright,
@@ -717,6 +856,11 @@ color: var(--gulf-blue);
 .social-bg:hover,
 .social-bg:active {
   fill: var(--amaranth);
+}
+
+footer-socials-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*Каталог*/
@@ -755,7 +899,7 @@ color: var(--gulf-blue);
   line-height: 30px;
   color: var(--gulf-blue);
   background-color: var(--alice-blue);
-  width: 940px;
+  /*width: 940px;*/
 }
 
 .filter-title {
@@ -766,7 +910,7 @@ color: var(--gulf-blue);
   line-height: 18px;
   color: var(--black);
   background-color: var(--old-lace);
-  width: 220px;
+  /*width: 220px;*/
 }
 
 .pricing {
@@ -777,7 +921,7 @@ color: var(--gulf-blue);
   line-height: 18px;
   color: var(--black);
   background-color: var(--old-lace);
-  width: 95px;
+  /*width: 95px;*/
 }
 
 .show-btn {
@@ -789,7 +933,7 @@ color: var(--gulf-blue);
   color: var(--black);
   background-color: var(--white);
   border: 1px solid var(--whisper);
-  width: 220px;
+  /*width: 220px;*/
 }
 
 .breadcrumbs,
@@ -849,12 +993,13 @@ color: var(--gulf-blue);
   line-height: 18px;
   color: var(--black);
   background-color: var(--old-lace);
-  width: 700px;
+  /*width: 700px;*/
 }
 
-.filter-container {
+/*.filter-container {
   width: 22px;
 }
+*/
 
 .filter-form fieldset {
   border: none;
@@ -868,7 +1013,7 @@ color: var(--gulf-blue);
   line-height: 30px;
   color: var(--black);
   border-top: 1px solid var(--whisper);
-  width: 220px;
+  /*width: 220px;*/
 }
 
 .filter-by-header:first-child {
@@ -881,7 +1026,7 @@ color: var(--gulf-blue);
 
 .added-to-card-container {
   background-color: var(--white);
-  width: 620px;
+  /*width: 620px;*/
 }
 
 .added-to-card-container p {
@@ -906,7 +1051,7 @@ color: var(--gulf-blue);
   font-size: 14px;
   line-height: 18px;
   color: var(--black);
-  width: 192px;
+  /*width: 192px;*/
 }
 
 .btn-continue-shopping {
@@ -917,7 +1062,7 @@ color: var(--gulf-blue);
 .paginator-link {
   border: 1px solid var(--whisper);
   border-radius: 2px;
-  width: 38px;
+  /*width: 38px;*/
   background-color: var(--white);
 }
 
@@ -933,9 +1078,10 @@ color: var(--gulf-blue);
   background-color: var(--amaranth);
 }
 
-.paginator-link:last-child {
+/*.paginator-link:last-child {
   width: 140px;
 }
+*/
 
 .perforators-about-title {
   font-family: Cuprum, Arial, sans-serif;
