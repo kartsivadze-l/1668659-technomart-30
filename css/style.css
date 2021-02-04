@@ -116,8 +116,7 @@ img {
 
 .upper-bar {
   width: 940px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, auto);
 }
@@ -223,6 +222,8 @@ img {
 }
 
 .mid-header {
+width: 940px;
+margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, auto);
 }
@@ -288,7 +289,13 @@ img {
   color: var(--silver);
 }
 
+.main-navigation {
+background-color: var(--gulf-blue);  
+}
+
 .site-nav {
+  width: 940px;
+  margin: 0 auto;
   list-style: none;
   background-color: var(--gulf-blue);
   display: grid;
@@ -407,9 +414,23 @@ img {
 .slider p {
   z-index: 1;
 }
-.slide-1 {
-  background-image: url(..img/.slide-1-perforator.jpg);
+
+.slider-text-wrapper {
+    background-color: rgba(0, 0, 0, 0.25);;
 }
+
+/*
+.slide-1 {
+  background-image: url(..img/slide1-perforator.jpg);
+  background-color: var(--dark-grey);
+}
+
+.slide-2 {
+    background-image: url(..img/slide2-drill.jpg);
+    background-image: var(--dark-grey);
+}
+
+*/
 
 .open-catalog-btn:hover {
   background-color: var(--mahogany);
@@ -459,7 +480,7 @@ img {
   font-style: normal;
   font-weight: normal;
   font-size: 21px;
-  line-height: 21px;‰
+  line-height: 21px;
   color: var(--black);
   background-color: var(--white);
 }
@@ -528,6 +549,22 @@ color: var(--gulf-blue);
   color: var(--black);
 }
 
+.product-card-image {
+    width: 127px;
+    height: 112px;
+    background-color: var(--linen);
+}
+
+.product-card-image:first-child,
+.product-card-image:nth-child(2),
+.product-card-image:nth-child(3),
+.product-card-image:nth-child(5),
+.product-card-image:nth-child(8)
+ {
+     width: 144px;
+     height: 128px;
+}
+
 .price {
   font-size: 17px;
   line-height: 18px;
@@ -580,6 +617,11 @@ color: var(--gulf-blue);
 
 .additional-services-wrapper button {
   width: 240px;
+}
+
+.services-info {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .additional-services h3 {
@@ -858,7 +900,7 @@ color: var(--gulf-blue);
   fill: var(--amaranth);
 }
 
-footer-socials-list {
+.footer-socials-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
