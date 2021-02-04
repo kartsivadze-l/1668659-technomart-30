@@ -11,7 +11,8 @@
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page-body">
-    <header class="main-header">
+    <header /*class="main-header"*/>
+        <div class="upper-bar-wrapper">
         <div class="upper-bar">
             <a href="index.html" class="logo"><h1>Техномарт</h1></a>
             <form
@@ -40,15 +41,19 @@
                 <path class="upper-icons" d="M15 2H4.07L3.648 0H0V2H2.031L4.016 11H15V9H9.441L15 6.951V2Z" fill="white"/>
                 </svg>Корзина: <span>10</span></a>
             <a class="header-btn-order" href="#">Оформить заказ</a>
+        </div>
           </div>
           <div class="main-bar">
+            <div class="mid-header">
             <h1 class="main-header-description">
-              Интернет-магазин строительных материалов и инструментов для ремонта
+              Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта
             </h1>
+            <address>
             <a class="phone" href="tel:+78125550555"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.572 18.985H14.631C10.502 18.497 7.47403 16.577 5.27203 14.121C3.06203 11.66 1.31803 8.49202 0.978027 4.22802V3.08402C1.05603 2.31002 1.43703 1.78002 1.87603 1.32702C2.42503 0.76602 3.25003 0.0440198 4.00203 0.0190198C4.55603 0.00101977 5.50203 0.39902 5.88103 0.91802C6.21003 1.36402 6.38503 2.25702 6.53703 2.92102C6.69103 3.59202 7.04203 4.56402 6.94503 5.21002C6.79703 6.21702 5.45803 6.64402 5.06603 7.37602C6.37303 10.511 8.50903 12.815 11.359 14.407C12.074 14.015 12.705 12.835 13.691 12.812C14.05 12.803 14.509 12.99 14.875 13.098C15.277 13.219 15.625 13.373 15.979 13.506C16.575 13.73 17.627 14.027 17.983 14.527C18.348 15.04 18.553 15.883 18.473 16.406C18.309 17.447 16.594 18.603 15.572 18.985Z" fill="#B7BFC8"/>
                 </svg>+7 (812) 555-05-55</a>
-            <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></address>
+       <div class="id-user-options-container">
        <div class="user-block-options-container">
             <a class="user-block-name" href="#"><svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path class="user-icons" d="M17.881 14.166C15.737 13.431 13.625 12.5 12.674 11.776C12.017 11.275 11.904 10.158 12.157 9.361C13.275 8.458 14.021 6.884 14.021 5.083C14.021 2.276 12.221 0 10 0C7.77902 0 5.97901 2.276 5.97901 5.083C5.97901 6.884 6.72501 8.457 7.84201 9.36C8.09501 10.158 7.98302 11.275 7.32502 11.776C6.37502 12.5 4.26201 13.43 2.11801 14.166C-0.0259852 14.902 1.48343e-05 18 1.48343e-05 18H20C20 18 20.025 14.901 17.881 14.166Z" fill="#C5C5C5"/>
@@ -58,11 +63,16 @@
         <path class="user-icons" d="M2.10604 13.952V3.048C2.12404 2.672 2.27704 1.991 3.11604 1.991H8.14304V0H3.11604C0.938036 0 0.112036 1.81 0.0870361 3.027V13.973C0.112036 15.189 0.938036 17 3.11604 17H8.14304V15.01H3.11604C2.27704 15.01 2.12404 14.327 2.10604 13.952Z" fill="#C5C5C5"/>
         </svg></a>
     </div>
-      <a class="personal-info" href="#">Мои заказы
-      <div class="circle"><svg width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="options-container">
+      <a class="personal-info" href="#">Мои заказы</a>
+      <svg /*class="circle"*/ class="personal-info" width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00023 0.494136C3.09715 0.494136 3.98643 1.38356 3.98643 2.4801C3.98643 3.57757 3.09715 4.46646 2.00023 4.46646C0.903104 4.46646 0.013898 3.57757 0.013898 2.4801C0.013898 1.38356 0.903104 0.494136 2.00023 0.494136Z" fill="white"/>
         <path class="circle-bg" fill-rule="evenodd" clip-rule="evenodd" d="M2.00023 0.494136C3.09715 0.494136 3.98643 1.38356 3.98643 2.4801C3.98643 3.57757 3.09715 4.46646 2.00023 4.46646C0.903104 4.46646 0.013898 3.57757 0.013898 2.4801C0.013898 1.38356 0.903104 0.494136 2.00023 0.494136Z" fill="#32425C"/>
-        </svg></div> Личный кабинет</a>
+        </svg>
+        <a class="personal-info">Личный кабинет</a>
+    </div>
+</div>
+</div>
       <nav class="main-navigation">
         <ul class="site-nav">
           <li class="site-nav-item">
@@ -90,7 +100,8 @@
       </nav>
       </div>
     </header>
-    <main class="container">
+    <main>
+        <div class="container">
       <section>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -116,10 +127,12 @@
           </li>
         </ul>
         <h2 class="category-title">ПЕРФОРАТОРЫ</h2>
+        <div class="filter-sort-catalog">
+        <div class="filter-container">
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-            <div class="filter-container">
+            
           <h2 class="filter-title">ФИЛЬТР:</h2>
-          <fieldset>
+          <fieldset class="filter-by-price">
             <h3 class="filter-by-header">ЦЕНА:</h3>
             <label for="price-min">
               <input class="pricing" id="price-min" type="text" value="0" />
@@ -129,7 +142,7 @@
               <input class="pricing" id="price-max" type="text" value="30 000" />
             </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-by-brand">
             <h3 class="filter-by-header">ПРОИЗВОДИТЕЛИ:</h3>
             <input
               id="checkbox-1"
@@ -169,7 +182,7 @@
             />
             <label for="checkbox-5">HITACHI</label>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-by-charging">
             <h3 class="filter-by-header">ПИТАНИЕ:</h3>
             <input class="charging-radio"
               id="radio-1"
@@ -185,13 +198,14 @@
           <button class="show-btn" type="submit">ПОКАЗАТЬ</button>
         </form>
     </div>
+    <div class="sort-and-catalog-container">
         <div class="sorting-bar">
-        <h2>Сортировка:</h2>
+        <h2>СОРТИРОВКА:</h2>
         <ul class="sort-by">
-          <li class="sort-by-option"><a href="#">По цене</a></li>
+          <li class="sort-by-option"><a href="#">ПО ЦЕНЕ</a></li>
 
-          <li class="sort-by-option"><a href="#">По типу</a></li>
-          <li class="sort-by-option"><a href="#">По функционалу</a></li>
+          <li class="sort-by-option"><a href="#">ПО ТИПУ</a></li>
+          <li class="sort-by-option"><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
           <li><a class="up" href="#"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="triangle-bg" d="M5.66241 0L11.1624 10L0.162415 10" fill="#C5C5C5"/>
             </svg></a></li>
@@ -200,7 +214,8 @@
             </svg></a></li>
         </ul>
         </div>
-        <h2>Перфораторы</h2>
+        <h2 class="hidden">Перфораторы</h2>
+        <div class="all-product-cards-catalog">
         <article class="product-card">
           <h3>Перфоратор BOSCH BFG 6000</h3>
           <a href="#" class="button-goods-buy">Купить</a>
@@ -321,7 +336,10 @@
             height="112"
           />
         </article>
-        <!--Это будет поп-ап-->
+    </div>
+</div>
+</div>
+        <!--Это будет поп-ап
         <div class="added-to-card-container">
             <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z" fill="#63A63E"/>
@@ -337,6 +355,7 @@
         <a class="btn-order" href="#">Оформить заказ</a>
          </div>
         </div>
+        -->
         <ul class="paginator">
           <li class="paginator-link">
             <a>1</a>
@@ -351,6 +370,8 @@
             <a href="#">СЛЕДУЮЩАЯ</a>
           </li>
         </ul>
+    </div>
+        <div class="perforators-about-container">
         <section class="perforators-about">
         <h3 class="perforators-about-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h3>
         <p class="perforators-about-info">
@@ -362,18 +383,15 @@
           будут совмещены отбойный молоток и ударная дрель.
         </p>
         </section>
+    </div>
       </section>
     </main>
     <footer class="main-footer">
-        <div class="container">
+        <div class="footer-1-wrapper">
         <div class="footer-1">
-        <a href="index.html" class="logo"><h1>ТЕХНОМАРТ</h1></a>
-        <section class="footer-contacts">
-          <address>
-            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </address>
-        </section>
+          <div class="footer-nav-1">
+        <a class="logo"><h1>ТЕХНОМАРТ</h1></a>
+        
         <nav class="footer-navigation">
           <ul class="footer-nav-list">
             <li class="footer-nav-item">
@@ -392,6 +410,14 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
+        </div>
+        <div class="footer-nav-2">
+          <section class="footer-contacts">
+            <address>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </address>
+          </section>
           <ul class="footer-catalog-list">
             <li class="footer-catalog-item">
               <a href="#">Материалы</a>
@@ -406,11 +432,14 @@
               <a href="#">Спецпредложения</a>
             </li>
           </ul>
+        </div>
         </nav>
       </div>
+    </div>
+    <div class="footer-2-wrapper">
       <div class="footer-2">
         <p class="footer-technomart-copyright">
-          © 2010–2017 Компания «Техномарт» Все права защищены
+          © 2010–2017 Компания «Техномарт»<br>Все права защищены
         </p>
         <section class="footer-socials">
           <ul class="footer-socials-list">
@@ -435,11 +464,11 @@
           </ul>
         </section>
         <p class="footer-feedback">
-          Обратная связь:
+          Обратная связь:<br>
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-copyright">
-          Разработано —
+          Разработано —<br>
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
