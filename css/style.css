@@ -110,8 +110,12 @@ img {
   height: auto;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .upper-bar-wrapper {
-width: 100%;
+  width: 100%;
   background-color: var(--bunting);
 }
 
@@ -152,7 +156,7 @@ width: 100%;
 }
 
 .main-bar {
-    width: 940px;
+  width: 940px;
   margin: 0 auto;
   background-color: var(--alice-blue);
 }
@@ -216,12 +220,12 @@ width: 100%;
 }
 
 .main-header {
-    width: 100%;
+  width: 100%;
 }
 
 .mid-header {
-    display: grid;
-    grid-template-columns: auto auto auto;
+  display: grid;
+  grid-template-columns: 197px 1fr 1fr;
 }
 
 .main-header-description {
@@ -231,11 +235,12 @@ width: 100%;
   font-size: 16px;
   line-height: 23px;
   color: var(--amaranth);
+  width: 197px;
 }
 
 .mid-header {
-width: 940px;
-margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, auto);
 }
@@ -274,8 +279,8 @@ margin: 0 auto;
 }
 
 .options-container {
-    display: grid;
-    grid-template-columns: repeat(3, min-content);
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
 }
 
 /*Почему не белеет фон контейнера?*/
@@ -307,9 +312,9 @@ margin: 0 auto;
 }
 
 .main-navigation {
-    width: 940px;
-    margin: 0 auto;
-background-color: var(--gulf-blue);  
+  width: 940px;
+  margin: 0 auto;
+  background-color: var(--gulf-blue);
 }
 
 .site-nav {
@@ -436,7 +441,7 @@ background-color: var(--gulf-blue);
 }
 
 .slider-text-wrapper {
-    background-color: rgba(0, 0, 0, 0.25);;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 /*
@@ -570,19 +575,18 @@ color: var(--gulf-blue);
 }
 
 .product-card-image {
-    width: 127px;
-    height: 112px;
-    background-color: var(--linen);
+  width: 127px;
+  height: 112px;
+  background-color: var(--linen);
 }
 
 .product-card-image:first-child,
 .product-card-image:nth-child(2),
 .product-card-image:nth-child(3),
 .product-card-image:nth-child(5),
-.product-card-image:nth-child(8)
- {
-     width: 144px;
-     height: 128px;
+.product-card-image:nth-child(8) {
+  width: 144px;
+  height: 128px;
 }
 
 .price {
@@ -636,7 +640,7 @@ color: var(--gulf-blue);
 }
 
 .perforators-about-container {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .additional-services-wrapper button {
@@ -644,8 +648,8 @@ color: var(--gulf-blue);
 }
 
 .services-info {
-    width: 940px;
-    margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .additional-services h3 {
@@ -781,7 +785,6 @@ color: var(--gulf-blue);
   color: var(--white);
   background-color: var(--amaranth);
 }
-
 
 .contact-form-item {
   color: var(--dark-grey);
@@ -988,13 +991,13 @@ color: var(--gulf-blue);
 
 .filter-title,
 .sorting-bar {
- height: 38px;
+  height: 38px;
 }
 
 .filter-sort-catalog {
-    display: grid;
-    grid-template-columns: 220px 700px;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 220px 700px;
+  gap: 20px;
 }
 
 .pricing {
@@ -1023,13 +1026,13 @@ color: var(--gulf-blue);
 .breadcrumbs,
 .sort-by,
 .paginator {
-    list-style: none;
+  list-style: none;
 }
 
 .breadcrumbs {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  padding: 0;
 }
 
 .breadcrumbs-item a,
@@ -1053,12 +1056,12 @@ color: var(--gulf-blue);
 }
 
 .sorting-bar h2 {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .sort-by {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
+  display: grid;
+  grid-template-columns: repeat(5, auto);
 }
 
 .sort-by-option a {
@@ -1121,19 +1124,19 @@ color: var(--gulf-blue);
 }
 
 .filter-by-price {
-padding: 0;  
+  padding: 0;
 }
 
 .filter-by-brand {
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    padding: 0;
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  padding: 0;
 }
 
 .filter-by-charging {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    padding: 0;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  padding: 0;
 }
 
 .charging-radio {
@@ -1141,10 +1144,10 @@ padding: 0;
 }
 
 .all-product-cards-catalog {
-    display: grid;
-    grid-template-columns: 220px 220px 220px;
-    grid-template-rows: 1 fr 1fr 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  grid-template-rows: 1 fr 1fr 1fr;
+  gap: 20px;
 }
 
 .added-to-card-container {
@@ -1178,7 +1181,7 @@ padding: 0;
 }
 
 .header-btn-order {
-    background-color: var(--apple);
+  background-color: var(--apple);
 }
 
 .btn-continue-shopping {
@@ -1193,13 +1196,12 @@ padding: 0;
   height: 38px;
   background-color: var(--white);
   font-family: "PT Sans", Arial, sans-serif;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 18px;
-color: var(--black);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--black);
 }
-
 
 .paginator-link a:hover {
   border: 1px solid var(--silver);
@@ -1215,20 +1217,18 @@ color: var(--black);
 }
 
 .paginator-link a:last-child {
-    width: 140px;
-  }
-  
-
-.paginator {
-    display: grid;
-    grid-template-columns: 38px 38px 38px 140px/*repeat(4, auto)*/;
-    margin-left: 200px;
+  width: 140px;
 }
 
+.paginator {
+  display: grid;
+  grid-template-columns: 38px 38px 38px 140px /*repeat(4, auto)*/;
+  margin-left: 200px;
+}
 
 .perforators-about {
-    width: 940px;
-    margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .perforators-about-title {
