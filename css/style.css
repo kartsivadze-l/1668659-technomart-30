@@ -86,7 +86,7 @@
   --silver-03: rgba(197, 197, 197, 0.3);
   --dark-grey-03: rgba(169, 169, 169, 0.3);
   --white-025: rgba(0, 0, 0, 0.25);
-  --white-024:  rgba(0, 0, 0, 0.24);
+  --white-024: rgba(0, 0, 0, 0.24);
   /*Shadows*/
   --bilbao: #367315;
   /*Borders*/
@@ -166,7 +166,6 @@ img {
 }
 */
 
-
 .upper-icons:hover {
   fill: var(--white);
 }
@@ -203,6 +202,10 @@ img {
   background-color: var(--white);
 }
 
+.header-btn-wrapper {
+  display: flex;
+}
+
 .header-btn-bookmarks,
 .header-btn-cart,
 .header-btn-order {
@@ -223,6 +226,7 @@ img {
   line-height: 24px;
   color: var(--white);
   background-color: var(--amaranth);
+  padding: 9px 21px 9px 35px;
 }
 
 .header-btn-bookmarks:active {
@@ -255,6 +259,7 @@ img {
   line-height: 23px;
   color: var(--amaranth);
   width: 197px;
+  padding-left: 30px;
 }
 
 .mid-header {
@@ -302,12 +307,14 @@ img {
 
 .user-block-options-container {
   background-color: var(--white);
-  grid-column: 1 / 3;
+  /*grid-column: 1 / 3;*/
 }
 
 .options-container {
-  display: grid;
-  grid-template-columns: repeat(3, min-content);
+  /*display: grid;
+  grid-template-columns: repeat(3, min-content);*/
+  display: flex;
+  justify-content: space-between;
 }
 
 /*Почему не белеет фон контейнера?*/
@@ -421,7 +428,6 @@ img {
 
 .feature-item:nth-child(5) {
   background-color: var(--de-york);
-  align-self: flex-start;
   margin-right: 0;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -429,7 +435,6 @@ img {
 
 .feature-item:last-child {
   background-color: var(--golden-tainoi);
-  align-self: flex-end;
   grid-column: 3 / 4;
   grid-row: -1 / -2;
 }
@@ -608,10 +613,15 @@ color: var(--gulf-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .product-card:not(:last-child) {
   margin-right: 20px;
+}
+
+.product-card.catalog:nth-of-type(3n) {
+  margin-right: 0;
 }
 
 .product-card h3 {
@@ -638,9 +648,15 @@ color: var(--gulf-blue);
   height: 128px;
 }
 
-.BFG9000 {
+.product-card.main img:first-child {
   width: 184px;
   height: 164px;
+}
+
+.product-card.main img:nth-child(2),
+.product-card.main img:last-child {
+  width: 127px;
+  height: 112px;
 }
 
 .price {
@@ -1070,11 +1086,10 @@ color: var(--gulf-blue);
   line-height: 18px;
   color: var(--black);
   background-color: var(--old-lace);
-  /*padding-left: 20px;*/
   display: table-cell;
   vertical-align: middle;
   width: 220px;
-  padding-left: 18px;
+  /*padding-left: 18px;*/
 }
 
 .filter-title,
@@ -1083,9 +1098,12 @@ color: var(--gulf-blue);
 }
 
 .filter-sort-catalog {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 220px 700px;
   gap: 20px;
+  */
+  display: flex;
+  flex-direction: row;
 }
 
 .pricing {
@@ -1118,8 +1136,10 @@ color: var(--gulf-blue);
 }
 
 .breadcrumbs {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
+  /*display: grid;
+  grid-template-columns: repeat(4, auto);*/
+  display: flex;
+  justify-content: space-between;
   padding: 0;
 }
 
@@ -1148,8 +1168,23 @@ color: var(--gulf-blue);
 }
 
 .sort-by {
+  /*
   display: grid;
   grid-template-columns: repeat(5, auto);
+  */
+  display: flex;
+  justify-content: space-between;
+}
+.sort-by-option:first-child {
+  margin-right: 70px;
+}
+
+.sort-by-option:nth-child(2) {
+  margin-right: 65px;
+}
+
+.sort-by-option:nth-child(3) {
+  margin-right: 46px;
 }
 
 .sort-by-option a {
@@ -1183,15 +1218,12 @@ color: var(--gulf-blue);
   line-height: 18px;
   color: var(--black);
   background-color: var(--old-lace);
-  display: grid;
-  grid-template-columns: auto auto;
+  /*display: grid;
+  grid-template-columns: auto auto;*/
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 28px;
 }
-
-/*.filter-container {
-  width: 22px;
-}
-*/
 
 .filter-form fieldset {
   border: none;
@@ -1217,15 +1249,19 @@ color: var(--gulf-blue);
 }
 
 .filter-by-brand {
-  display: grid;
-  grid-template-rows: repeat(6, auto);
+  /*display: grid;
+  grid-template-rows: repeat(6, auto);*/
+  display: flex;
+  flex-direction: column;
   padding: 0;
 }
 
 .filter-by-charging {
-  display: grid;
-  grid-template-rows: repeat(3, auto);
+  /*display: grid;
+  grid-template-rows: repeat(3, auto);*/
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .charging-radio {
@@ -1233,10 +1269,14 @@ color: var(--gulf-blue);
 }
 
 .all-product-cards-catalog {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 220px 220px 220px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  */
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
 }
 
 .added-to-card-container {
@@ -1309,9 +1349,14 @@ color: var(--gulf-blue);
   width: 140px;
 }
 
+.paginator-link {
+  margin-right: 10px;
+}
+
 .paginator {
-  display: grid;
-  grid-template-columns: 38px 38px 38px 140px /*repeat(4, auto)*/;
+  /*display: grid;
+  grid-template-columns: 38px 38px 38px 140px;*/
+  display: flex;
   margin-left: 200px;
 }
 
