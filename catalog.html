@@ -14,12 +14,13 @@
     <header>
       <div class="upper-bar-wrapper">
         <div class="upper-bar">
-          <a href="index.html" class="logo uppercase"><h1>Техномарт</h1></a>
+          <a href="index.html" class="logo uppercase"></a>
           <form
             class="search-field"
             action="https://echo.htmlacademy.ru"
             method="POST"
           >
+          
             <input
               class="colortext"
               id="search-field"
@@ -27,7 +28,7 @@
               name="search"
               placeholder="Поиск:"
             />
-            <button class="button" id="search-submit" type="submit"></button>
+            <button class="search-field-btn" id="search-submit" type="submit"></button>
           </form>
           <div class="header-btn-wrapper">
             <a class="header-btn-bookmarks" href="#">
@@ -92,7 +93,24 @@
           <h2 class="hidden">Навигационная цепочка</h2>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a href="index.html">Home</a>
+              <a href="index.html"
+                ><svg
+                  width="14"
+                  height="12"
+                  viewBox="0 0 14 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z"
+                    fill="#C1C6CE"
+                  />
+                  <path
+                    d="M13.8311 6.365L12.0001 4.751V0H10.0001V2.987L7.3321 0.635C7.3121 0.618 7.2891 0.612 7.2681 0.598C7.24306 0.579705 7.21626 0.56396 7.1881 0.551C7.15721 0.540195 7.12541 0.532163 7.0931 0.527C7.0621 0.521 7.0321 0.515 7.0001 0.515C6.9691 0.515 6.9391 0.521 6.9081 0.527C6.87563 0.531919 6.84378 0.5403 6.8131 0.552C6.7851 0.563 6.7601 0.581 6.7331 0.598C6.7121 0.612 6.6881 0.618 6.6691 0.635L0.171098 6.365C0.0163621 6.50291 -0.0374732 6.72187 0.0356695 6.9158C0.108812 7.10974 0.293829 7.23862 0.501098 7.24C0.623029 7.24035 0.740833 7.19586 0.832098 7.115L7.0001 1.677L13.1691 7.115C13.3779 7.27913 13.6785 7.25178 13.8543 7.05265C14.0301 6.85352 14.0199 6.55183 13.8311 6.365Z"
+                    fill="#C1C6CE"
+                  />
+                </svg>
+              </a>
             </li>
             <li class="breadcrumbs-item">
               <a class="uppercase">Каталог</a>
@@ -116,22 +134,41 @@
               <h2 class="filter-title uppercase">Фильтр:</h2>
               <fieldset class="filter-by-price">
                 <h3 class="filter-by-header uppercase">Цена:</h3>
-                <label for="price-min">
-                  <input class="pricing" id="price-min" type="text" value="0" />
-                </label>
-                –
-                <label for="price-max">
-                  <input
-                    class="pricing"
-                    id="price-max"
-                    type="text"
-                    value="30 000"
-                  />
-                </label>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="width: 70%; margin-left: 10%;"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0" style="left: 8%">
+                      <div class="toggle toggle-max" tabindex="0" style="left: 3000%"></div>
+                    </div>
+                  </div>
+                  <div class="price-controls">
+                    <label for="price-min">
+                      <input
+                        class="pricing"
+                        id="price-min"
+                        type="text"
+                        value="0"
+                      />
+                    </label>
+                    
+                    <label for="price-max">
+                      <span class="dividing-dash">–</span>
+                      <input
+                        class="pricing"
+                        id="price-max"
+                        type="text"
+                        value="30 000"
+                      />
+                    </label>
+                  </div>
+                </div>
               </fieldset>
               <fieldset class="filter-by-brand">
                 <h3 class="filter-by-header uppercase">Производители:</h3>
                 <input
+                  class="hidden filter-input-checkbox"
                   id="checkbox-1"
                   type="checkbox"
                   name="checkbox"
@@ -140,6 +177,7 @@
                 />
                 <label for="checkbox-1" class="uppercase">Bosch</label>
                 <input
+                  class="hidden filter-input-checkbox"
                   id="checkbox-2"
                   type="checkbox"
                   name="checkbox"
@@ -147,6 +185,7 @@
                 />
                 <label for="checkbox-2" class="uppercase">Интерскол</label>
                 <input
+                  class="hidden filter-input-checkbox"
                   id="checkbox-3"
                   type="checkbox"
                   name="checkbox"
@@ -155,6 +194,7 @@
                 />
                 <label for="checkbox-3" class="uppercase">Makita</label>
                 <input
+                  class="hidden filter-input-checkbox"
                   id="checkbox-4"
                   type="checkbox"
                   name="checkbox"
@@ -162,6 +202,7 @@
                 />
                 <label for="checkbox-4" class="uppercase">Dewalt</label>
                 <input
+                  class="hidden filter-input-checkbox"
                   id="checkbox-5"
                   type="checkbox"
                   name="checkbox"
@@ -172,7 +213,7 @@
               <fieldset class="filter-by-charging">
                 <h3 class="filter-by-header uppercase">Питание:</h3>
                 <input
-                  class="charging-radio"
+                  class="charging-radio hidden filter-input-radio"
                   id="radio-1"
                   type="radio"
                   name="radiogroup"
@@ -181,7 +222,7 @@
                 />
                 <label for="radio-1" class="uppercase">Аккумуляторные</label>
                 <input
-                  class="charging-radio"
+                  class="charging-radio hidden filter-input-radio"
                   id="radio-2"
                   type="radio"
                   name="radiogroup"
@@ -390,7 +431,7 @@
       <div class="footer-1-wrapper">
         <div class="footer-1">
           <div class="footer-nav-1">
-            <a class="logo" href="#"><h1 class="uppercase">Техномарт</h1></a>
+            <a class="logo" href="#"></a>
 
             <nav class="footer-navigation">
               <ul class="footer-nav-list">
@@ -421,7 +462,7 @@
               </address>
             </section>
             <ul class="footer-catalog-list">
-              <li class="footer-catalog-item">
+              <li class="footer-catalog-item product-flag">
                 <a href="#">Материалы</a>
               </li>
               <li class="footer-catalog-item">
