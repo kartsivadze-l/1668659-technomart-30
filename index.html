@@ -14,12 +14,18 @@
     <header class="main-header">
       <div class="upper-bar-wrapper">
       <div class="upper-bar">
-      <a href="#" class="logo"><h1 class="uppercase">Техномарт</h1></a>
+      <div class="logo-search">
+      <a href="#" class="logo"></a>
       <form
         class="search-field"
         action="https://echo.htmlacademy.ru"
         method="POST"
       >
+      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.3">
+        <path class="upper-icons" fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+        </g>
+        </svg>
         <input
         class="colortext"
           id="search-field"
@@ -29,9 +35,12 @@
         />
         <button class="button" id="search-submit" type="submit"></button>
       </form>
+    </div>
+    <div class="header-buttons">
       <a class="header-btn-bookmarks" href="#">Закладки: <span>0</span></a>
       <a class="header-btn-cart" href="#">Корзина: <span>0</span></a>
       <a class="header-btn-order" href="#">Оформить заказ</a>
+    </div>
       </div>
       </div>
       <div class="main-bar">
@@ -105,10 +114,14 @@
             </li>
           
           <li class="feature-item slider">
-            <button class="button slider-btn-back" type="button" disabled>Назад
+            <button class="button slider-btn-back" type="button" disabled><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
+              </svg>
             </button>
-            <button class="button slider-btn-forward" type="button">Вперед</button>
-            <a class="button open-catalog-btn uppercase" href="catalog.html">Открыть каталог</a>
+            <button class="button slider-btn-forward" type="button"><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
+              </svg></button>
+            <a class="open-catalog-btn uppercase" href="catalog.html">Открыть каталог</a>
             <div class="slider slide-1">
             <div class="slider-text-wrapper">
             <h3 class="uppercase">Перфораторы</h3>
@@ -170,14 +183,14 @@
       </div>
         <div class="all-product-cards main">
         <article class="product-card main">
-          
+          <h3>Перфоратор BOSCH BFG 9000</h3>
           <img
             src="img/items-bfg9000.jpg"
             alt="Перфоратор BOSCH BFG 9000"
             width="184"
             height="164"
           />
-          <h3>Перфоратор BOSCH BFG 9000</h3>
+          
           <span class="old-price">32500 Р.</span>
           
           <a class="price" href="#">25500 Р.</a>
@@ -187,6 +200,7 @@
           </div>
         </article>
         <article class="product-card main">
+          <h3>Перфоратор BOSCH BFG 3000</h3>
           
           <img
             src="img/items-bfg3000.jpg"
@@ -194,7 +208,7 @@
             width="127"
             height="112"
           />
-          <h3>Перфоратор BOSCH BFG 3000</h3>
+          
           <span class="old-price">22500 Р.</span>
           <a class="price" href="#">15500 Р.</a>
           
@@ -204,6 +218,7 @@
           </div>
         </article>
         <article class="product-card main">
+          <h3>Перфоратор BOSCH BFG 6000</h3>
           
           <img
             src="img/items-bfg6000.jpg"
@@ -211,7 +226,7 @@
             width="144"
             height="128"
           />
-          <h3>Перфоратор BOSCH BFG 6000</h3>
+          
           
           <span class="old-price">30500 Р.</span>
           <a class="price" href="#">25500 Р.</a>
@@ -221,6 +236,7 @@
           </div>
         </article>
         <article class="product-card main">
+          <h3>Перфоратор BOSCH BFG 2000</h3>
           
           <img
             src="img/items-bfg2000.jpg"
@@ -228,7 +244,7 @@
             width="127"
             height="112"
           />
-          <h3>Перфоратор BOSCH BFG 2000</h3>
+          
           <span class="old-price">32500 P.</span>
           <a class="price" href="#">12500 Р.</a>
           
@@ -292,17 +308,19 @@
           Хороший интернет-магазин отличается от плохого не только ценами! Мы
           стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
+        <div class="service-btn-slider-wrapper">
         <div class="additional-services-btn-wrapper">
-        <button class="button service-btn-delivery" type="button">
-          Доставка
-        </button>
-        <button class="button service-btn-guarantee" type="button">
-          Гарантия
-        </button>
-        <button class="button service-btn-credit" type="button">
-          Кредит
-        </button>
+        <input type="radio" class="service-btn-delivery hidden" id="service-btn-delivery" name="service-toggle" checked>
+        <input type="radio" class="service-btn-guarantee hidden" id="service-btn-guarantee" name="service-toggle">
+        <input type="radio" class="service-btn-credit hidden" id="service-btn-credit" name="service-toggle">
+        <!--<div class="additional-services-btn-controls">-->
+          <label class="service-slider-control control-1" for="service-btn-delivery">Доставка</label>
+          <label class="service-slider-control control-2" for="service-btn-guarantee">Гарантия</label>
+          <label class="service-slider-control control-3" for="service-btn-credit">Кредит</label>
+
+        <!--</div>-->
       </div>
+      <div class="additional-services-slider">
         <div class="service-slide delivery">
         <p class="service-titles uppercase">Доставка</p>
         <p>
@@ -311,7 +329,7 @@
           этаж!
         </p>
       </div>
-      <!--
+      
       <div class="service-slide guarantee">
         <p class="service-titles uppercase">Гарантия</p>
         <p>
@@ -327,9 +345,11 @@
           Залезть в долговую яму стало проще! Кредитные консультанты придут вам
           на помощь.
         </p>
-        <a class="button want-credit-btn uppercase" href="#">Отправить заявку</a>
+        <a class="want-credit-btn uppercase" href="#">Отправить заявку</a>
       </div>
-      -->
+    </div>
+      
+    </div>
       </div>
     </div>
       </section>
@@ -435,9 +455,9 @@
       <div class="footer-1-wrapper">
       <div class="footer-1">
         <div class="footer-nav-1">
-      <a class="logo" href="#"><h1 class="uppercase">Техномарт</h1></a>
+      <a class="footer logo" href="#"></a>
       
-      <nav class="footer-navigation">
+      
         <ul class="footer-nav-list">
           <li class="footer-nav-item">
             <a href="#">Компания</a>
@@ -478,7 +498,7 @@
           </li>
         </ul>
       </div>
-      </nav>
+      
     </div>
   </div>
   <div class="footer-2-wrapper">
