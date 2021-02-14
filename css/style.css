@@ -1534,8 +1534,27 @@ color: var(--gulf-blue);
   color: var(--black);
 }
 
+.feedback-pop-up {
+  position: relative;
+  box-sizing: border-box;
+  width: 620px;
+  height: 430px;
+  border-top: 7px solid var(--amaranth);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  grid-template-rows: auto auto;
+}
+
 .send-btn-container {
   background-color: var(--white-smoke);
+  padding: 37px 80px;
+  position: absolute;
+  top: 318px;
 }
 .send-btn {
   font-family: Cuprum, Arial, sans-serif;
@@ -1545,6 +1564,10 @@ color: var(--gulf-blue);
   line-height: 18px;
   color: var(--white);
   background-color: var(--amaranth);
+  width: 460px;
+  border: none;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .footer-contacts address {
@@ -2303,13 +2326,17 @@ color: var(--gulf-blue);
   margin-left: 10px;
 }
 
-.close-btn-container {
+.close-btn {
   position: absolute;
-  top: -2px;
-  right: 20px;
+  width: 21px;
+  height: 21px;
+  top: 11px;
+  right: 18px;
+  border: none;
+  background-color: var(--white);
 }
 
-.close-btn {
+/*.close-btn {
   position: relative;
   border: none;
 }
@@ -2325,6 +2352,7 @@ color: var(--gulf-blue);
   top: 0;
   left: 0;
 }
+*/
 
 .paginator-link:hover {
   border: 1px solid var(--silver);
