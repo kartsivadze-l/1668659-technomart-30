@@ -263,7 +263,6 @@ color:var(--basic-white);
   line-height: 24px;
   color: var(--white); /*Как добиться,чтобы текст все-таки стал белым?*/
   background-color: var(--bunting);
-
 }
 
 .colortext:focus {
@@ -273,14 +272,13 @@ color:var(--basic-white);
 .colortext::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 24px;
-  color:var(--basic-white);
+  color: var(--basic-white);
 }
-  
-  .colortext::-moz-placeholder {
-  color:var(--basic-white);
-  opacity:1;
+
+.colortext::-moz-placeholder {
+  color: var(--basic-white);
+  opacity: 1;
 }
-  
 
 .search-field:hover svg g {
   opacity: 1;
@@ -291,20 +289,17 @@ color:var(--basic-white);
 }
 
 .search-field:active svg path {
-fill: var(--amaranth);
+  fill: var(--amaranth);
 }
 
 .search-field input {
-  border:0;
-outline:0;
+  border: 0;
+  outline: 0;
 }
-
 
 .search-field:active input {
   background-color: var(--white);
 }
-
-
 
 /*.search-field input {
   margin-left: 17px;
@@ -591,7 +586,6 @@ outline:0;
   width: 121px;
 }
 
-
 .login-btn:hover,
 .sign-in-btn:hover {
   color: var(--amaranth);
@@ -786,9 +780,7 @@ outline:0;
   width: 620px;
   height: 266px; /*это временно!*/
   position: relative;
-
 }
-
 
 .slider-text-wrapper p {
   font-family: Cuprum, Arial, sans-serif;
@@ -850,8 +842,6 @@ outline:0;
   transform: rotate(-180deg);
 }
 
-
-
 .slider-btn-back {
   position: absolute;
   left: 24px;
@@ -876,7 +866,6 @@ outline:0;
   /*box-sizing: border-box;
   cursor: pointer;
   background-color: transparent;*/
-
 }
 
 /*.slider-btn {
@@ -889,7 +878,6 @@ outline: 0;
 cursor: pointer;
 }
 */
-
 
 .all-popular-brands {
   display: flex;
@@ -907,17 +895,16 @@ cursor: pointer;
   width: 220px;
   margin-bottom: 20px;
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .all-popular-brands a:hover {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
-
 }
 
 .all-popular-brands a:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .brand-logo {
@@ -995,7 +982,6 @@ color: var(--gulf-blue);
   position: relative;
 }
 
-
 .all-popular-goods-btn,
 .all-brands-btn {
   font-family: Cuprum, Arial, sans-serif;
@@ -1018,8 +1004,6 @@ color: var(--gulf-blue);
   background-color: var(--cardinal);
 }
 
-
-
 .all-popular-goods-btn {
   position: absolute;
   top: 25px;
@@ -1027,15 +1011,12 @@ color: var(--gulf-blue);
   padding: 11px 24px 9px 24px;
 }
 
-
-
 .all-brands-btn {
   position: absolute;
   top: 25px;
   right: 19px;
   padding: 11px 38px 9px 39px;
 }
-
 
 .all-product-cards {
   /*display: grid;
@@ -1160,7 +1141,7 @@ color: var(--gulf-blue);
   font-size: 18px;
   line-height: 20px;
   color: var(--black);
-  
+
   text-align: center;
   position: absolute;
   top: 179px;
@@ -1268,8 +1249,6 @@ color: var(--gulf-blue);
   background-color: var(--la-palma);
 }
 
-
-
 .button-goods-bookmarks {
   color: var(--gulf-blue);
   outline: 3px solid var(--apple);
@@ -1281,11 +1260,9 @@ color: var(--gulf-blue);
   padding-bottom: 10px;
   text-align: center;
   display: inline-block;
- 
 }
 
 .button-goods-bookmarks:hover {
-  
   border: 3px solid var(--gulf-blue);
 }
 
@@ -1644,13 +1621,12 @@ color: var(--gulf-blue);
 
 .modal {
   position: fixed;
-  
+
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  
-  z-index: 10;
+  transform: translate(-50%, -50%);
 
+  z-index: 10;
 }
 
 .modal-map-container {
@@ -1674,11 +1650,9 @@ color: var(--gulf-blue);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
   padding-top: 11px;
   background-color: var(--white);
-  
 }
 
 .modal-contact-form {
-  
   /*display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
@@ -1688,17 +1662,14 @@ color: var(--gulf-blue);
   left: 0;
   box-sizing: border-box;
   margin: 0;
-  
 }
 
 .contact-form-container {
- 
   padding-left: 80px;
   display: grid;
   grid-template-columns: 220px 220px;
   column-gap: 20px;
   grid-template-rows: auto auto;
-
 }
 
 .contact-form-item:first-child,
@@ -1706,7 +1677,6 @@ color: var(--gulf-blue);
   margin-top: 11px;
   margin-bottom: 0;
 }
-
 
 .contact-form-item:first-child input,
 .contact-form-item:nth-child(2) input {
@@ -1733,8 +1703,6 @@ color: var(--gulf-blue);
   padding-top: 6px;
 }
 
-
-
 .contact-form-item input {
   display: block;
 }
@@ -1743,8 +1711,6 @@ color: var(--gulf-blue);
   background-color: var(--white-smoke);
   padding: 37px 80px;
   margin-top: 37px;
-
-  
 }
 .send-btn {
   font-family: Cuprum, Arial, sans-serif;
@@ -1758,10 +1724,7 @@ color: var(--gulf-blue);
   border: none;
   padding-top: 11px;
   padding-bottom: 9px;
-  
 }
-
-
 
 .modal-map {
   width: 943px;
@@ -1772,7 +1735,6 @@ color: var(--gulf-blue);
   position: relative;
   padding: 0;
   background-color: var(--white);
-
 }
 
 .modal-map iframe {
@@ -1783,7 +1745,6 @@ color: var(--gulf-blue);
   width: 943px;
   height: 449px;
   border: none;
-  
 }
 
 .footer-contacts address {
@@ -2292,7 +2253,6 @@ color: var(--gulf-blue);
   background-repeat: no-repeat;
 }
 
-
 .filter-input-checkbox:checked + label::after {
   content: "";
   position: absolute;
@@ -2440,7 +2400,6 @@ color: var(--gulf-blue);
   flex-wrap: wrap;
   width: 700px;
 }
-
 
 .modal-added-to-card {
   background-color: var(--white);
