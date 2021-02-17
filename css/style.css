@@ -206,6 +206,7 @@ line-height:24px;
 color:var(--basic-white);
 }*/
 
+
 .footer.logo {
   padding: 20px 41px 25px 41px;
   position: relative;
@@ -230,22 +231,11 @@ color:var(--basic-white);
 .header-buttons {
   display: flex;
 }
-/*
-.upper-icons,
-.upper-icons:visited,
-.upper-icons:active {
-  fill: var(--white-05);
-}
-*/
-
-.upper-icons:hover {
-  fill: var(--white);
-}
 
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 120px 0px;
+  margin-bottom: 0;
 }
 
 .main-bar {
@@ -261,7 +251,7 @@ color:var(--basic-white);
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  color: var(--white); /*Как добиться,чтобы текст все-таки стал белым?*/
+  color: var(--white);
   background-color: var(--bunting);
 }
 
@@ -369,7 +359,14 @@ color:var(--basic-white);
   background-position: 0 0;
   position: absolute;
   left: -9px;
-  top: 13px;
+  top: 13px; 
+}
+
+.header-btn-bookmarks:hover {
+  opacity: 1;
+}
+
+.header-btn-bookmarks:hover::before {
   opacity: 1;
 }
 
@@ -671,6 +668,7 @@ color:var(--basic-white);
   background-color: var(--golden-tainoi-1);
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  overflow: hidden;
 }
 
 .feature-item:first-child::after {
@@ -1067,6 +1065,15 @@ color: var(--gulf-blue);
   z-index: -1;
 }
 
+.new-promo {
+  position: absolute;
+  top: -6px;
+  right: -27px;
+  transform: rotate(45deg);
+  z-index: 5;
+}
+  
+
 .new-popular {
   position: absolute;
   top: -4px;
@@ -1263,12 +1270,14 @@ color: var(--gulf-blue);
 }
 
 .button-goods-bookmarks:hover {
-  border: 3px solid var(--gulf-blue);
+  outline: 3px solid var(--gulf-blue);
+  outline-offset: -3px;;
 }
 
 .button-goods-bookmarks:active {
   color: var(--link-water);
-  border: 3px solid var(--link-water);
+  outline: 3px solid var(--link-water);
+  outline-offset: -3px;
 }
 
 .additional-services-wrapper,
@@ -1813,6 +1822,7 @@ color: var(--gulf-blue);
   opacity: 0.5;
 }
 
+
 .footer-1-wrapper {
   background-color: var(--china-blue);
   margin-top: 0;
@@ -1977,6 +1987,7 @@ color: var(--gulf-blue);
   padding-top: 29px;
   padding-bottom: 30px;
   padding-left: 29px;
+  margin-top: 0;
 }
 
 .filter-title {
@@ -2049,6 +2060,8 @@ color: var(--gulf-blue);
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  padding-top: 21px;
+  padding-bottom: 20px;
 }
 
 .breadcrumbs-item {
@@ -2201,9 +2214,19 @@ color: var(--gulf-blue);
   margin-bottom: 28px;
 }
 
-.filter-form fieldset {
+/*.filter-form fieldset {
   border: none;
 }
+*/
+
+.filter-by-brand {
+  /*display: grid;
+  grid-template-rows: repeat(6, auto);*/
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
 
 .filter-by-header {
   font-family: "PT Sans", Arial, sans-serif;
@@ -2230,6 +2253,10 @@ color: var(--gulf-blue);
 .filter-by-brand label:not(:last-child),
 .filter-by-charging label:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.filter-by-brand:last-child {
+  margin-bottom: 27px;
 }
 
 .filter-by-charging label:last-child {
@@ -2302,6 +2329,8 @@ color: var(--gulf-blue);
 .filter-by-price {
   padding: 0;
   width: 220px;
+  border: 0;
+  border-bottom: 1px solid var(--silver);
 }
 
 .range-controls {
@@ -2352,6 +2381,7 @@ color: var(--gulf-blue);
 .price-controls {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .price-controls input {
@@ -2373,7 +2403,8 @@ color: var(--gulf-blue);
   display: flex;
   flex-direction: column;
   padding: 0;
-  border-top: 1px solid --whisper;
+  border: 0;
+  border-bottom: 1px solid --silver;
 }
 
 .filter-by-charging {
@@ -2382,8 +2413,10 @@ color: var(--gulf-blue);
   padding: 0;
   display: flex;
   flex-direction: column;
-  padding-top: 18px;
+  /*padding-top: 18px;*/
+  border: 0;
   border-top: 1px solid var(--silver);
+  margin-top: 18px;
 }
 
 .charging-radio {
