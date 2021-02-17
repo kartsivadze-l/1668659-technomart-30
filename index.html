@@ -13,9 +13,13 @@
   <body class="page-body">
     <header class="main-header">
       <div class="upper-bar-wrapper">
+        
+          
+         
       <div class="upper-bar">
       <div class="logo-search">
-      <a href="#" class="logo"></a>
+        <a href="#" class="logo"></a>
+        
       <form
         class="search-field"
         action="https://echo.htmlacademy.ru"
@@ -35,7 +39,7 @@
         />
         <button class="button" id="search-submit" type="submit"></button>
       </form>
-    </div>
+   </div>
     <div class="header-buttons">
       <a class="header-btn-bookmarks" href="#">Закладки: <span>0</span></a>
       <a class="header-btn-cart" href="#">Корзина: <span>0</span></a>
@@ -52,7 +56,10 @@
       <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></address>
       <section class="user-block">
-        <a class="login-btn" href="#">Войти</a>
+        <a class="login-btn" href="#"><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.1667 8.5L5.71429 0V6H0V11H5.71429V17L14.1667 8.5Z" fill="#C5C5C5"/>
+          <path d="M16.177 15.01H11.3894V17H16.177C18.2513 17 19.038 15.19 19.0618 13.974V3.028C19.038 1.811 18.2513 0 16.177 0H11.3894V1.99H16.177C16.9761 1.99 17.1218 2.671 17.1389 3.047V13.951C17.1227 14.327 16.9761 15.01 16.177 15.01Z" fill="#C5C5C5"/>
+          </svg>Войти</a>
         <a class="sign-in-btn" href="#">Регистрация</a>
       </div>
       </section>
@@ -114,11 +121,11 @@
             </li>
           
           <li class="feature-item slider">
-            <button class="button slider-btn-back" type="button" disabled><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="slider-btn slider-btn-back" type="button" disabled><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
               </svg>
             </button>
-            <button class="button slider-btn-forward" type="button"><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="slider-btn slider-btn-forward" type="button"><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
               </svg></button>
             <a class="open-catalog-btn uppercase" href="catalog.html">Открыть каталог</a>
@@ -185,6 +192,7 @@
         <article class="product-card main">
           <h3>Перфоратор BOSCH BFG 9000</h3>
           <img
+          class="product-card-image bfg9000"
             src="img/items-bfg9000.jpg"
             alt="Перфоратор BOSCH BFG 9000"
             width="184"
@@ -192,17 +200,20 @@
           />
           
           <span class="old-price">32500 Р.</span>
-          
+         <div class="price-container">
           <a class="price" href="#">25500 Р.</a>
-          <div class="model-item-finalize hidden">
+        </div>
+        
+          <div class="product-pop-up">
             <a href="#" class="button-goods-buy">Купить</a>
             <a href="#" class="button-goods-bookmarks">В закладки</a>
           </div>
+       
         </article>
         <article class="product-card main">
           <h3>Перфоратор BOSCH BFG 3000</h3>
           
-          <img
+          <img class="product-card-image bfg3000"
             src="img/items-bfg3000.jpg"
             alt="Перфоратор BOSCH BFG 3000"
             width="127"
@@ -210,17 +221,23 @@
           />
           
           <span class="old-price">22500 Р.</span>
+          <div class="price-container">
           <a class="price" href="#">15500 Р.</a>
           
-          <div class="model-item-finalize hidden">
+          </div>
+          
+          
+          <div class="product-pop-up">
             <a href="#" class="button-goods-buy">Купить</a>
             <a href="#" class="button-goods-bookmarks">В закладки</a>
           </div>
+        
         </article>
         <article class="product-card main">
           <h3>Перфоратор BOSCH BFG 6000</h3>
           
           <img
+          class="product-card-image bfg6000"
             src="img/items-bfg6000.jpg"
             alt="Перфоратор BOSCH BFG 6000"
             width="144"
@@ -229,16 +246,20 @@
           
           
           <span class="old-price">30500 Р.</span>
+          <div class="price-container">
           <a class="price" href="#">25500 Р.</a>
-          <div class="model-item-finalize hidden">
+          </div>
+          <div class="product-pop-up">
             <a href="#" class="button-goods-buy">Купить</a>
             <a href="#" class="button-goods-bookmarks">В закладки</a>
           </div>
+        
         </article>
         <article class="product-card main">
           <h3>Перфоратор BOSCH BFG 2000</h3>
           
           <img
+          class="product-card-image bfg2000"
             src="img/items-bfg2000.jpg"
             alt="Перфоратор BOSCH BFG 2000"
             width="127"
@@ -246,12 +267,14 @@
           />
           
           <span class="old-price">32500 P.</span>
+          <div class="price-container">
           <a class="price" href="#">12500 Р.</a>
-          
-          <div class="model-item-finalize hidden">
+          </div>
+          <div class="product-pop-up">
             <a href="#" class="button-goods-buy">Купить</a>
             <a href="#" class="button-goods-bookmarks">В закладки</a>
           </div>
+         
         </article>
       </div>
       </section>
@@ -392,19 +415,20 @@
         </section>
       </section>
     </div>
-    
-      <section class="feedback-pop-up">
+    <div class="modal modal-feedback-container">
+      <section class="modal-feedback">
         <h2 class="hidden">Напишите нам</h2>
-        <div class="close-btn-container">
-        <button class="close-btn" type="button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        
+        <button class="close-btn" type="button" aria-label="Закрыть"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
           </svg></button>
-      </div>
+      
         <form
-          class="modal modal-contact-form"
+          class="modal-contact-form"
           action="https://echo.htmlacademy.ru"
           method="POST"
         >
+        <div class="contact-form-container">
           <p class="contact-form-item">
             <label for="user-Name">Ваше имя:</label>
             <input
@@ -433,6 +457,7 @@
               placeholder="В свободной форме"
             ></textarea>
           </p>
+        </div>
           <p class="contact-form-item">
             <div class="send-btn-container">
             <button class="button send-btn uppercase" type="submit">Отправить</button>
@@ -444,19 +469,19 @@
           
         </form>
       </section>
-      
-      <!--поп-ап
-      <section class="modal modal-map" id="Map">
-        <h2>Как до нас добраться</h2>
-        <img
-          src="img/map-open.png"
-          width="943"
-          height="449"
-          alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
-        />
-        <button class="close-btn" type="button">Закрыть</button>
+    </div>
+      <div class="modal modal-map-container">
+      <section class="modal-map" id="Map">
+        <h2 class="hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036252949038!2d30.32086407971034!3d59.93871916914388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1613473099723!5m2!1sru!2sru" allowfullscreen>
+        width="943"
+        height="449"
+        title="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></iframe>
+        
+        <button class="close-btn" type="button"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
+          </svg></button>
       </section>
-      -->
 
     </main>
     <footer class="main-footer">
