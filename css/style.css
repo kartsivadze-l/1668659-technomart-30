@@ -753,6 +753,9 @@ search-field svg {
   position: absolute;
   top: 0px;
   left: 22px;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .feature-item svg {
@@ -823,6 +826,12 @@ search-field svg {
   color: var(--white);
 }
 
+.slider-text-wrapper h3 {
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+}
+
 .slider-text-wrapper {
   background-color: var(--white-025);
   padding-left: 24px;
@@ -833,13 +842,15 @@ search-field svg {
 
 /*
 .slide-1 {
-  background-image: url(..img/slide1-perforator.jpg);
+  background-image: url(../img/slide1-perforator.jpg);
   background-color: var(--dark-grey);
 }
 
+
+
 .slide-2 {
-    background-image: url(..img/slide2-drill.jpg);
-    background-image: var(--dark-grey);
+    background-image: url(../img/slide2-drill.jpg);
+    background-color: var(--dark-grey);
 }
 
 */
@@ -884,6 +895,7 @@ search-field svg {
   width: 23px;
   height: 41px;
   box-sizing: border-box;
+  z-index: 2;
 }
 
 .slider-btn-forward {
@@ -895,10 +907,11 @@ search-field svg {
   padding: 0;
   width: 23px;
   height: 41px;
-  /*box-sizing: border-box;
+  z-index: 2;
+}
+/*box-sizing: border-box;
   cursor: pointer;
   background-color: transparent;*/
-}
 
 /*.slider-btn {
   position: absolute;
