@@ -3,8 +3,8 @@ const feedbackPopup = document.querySelector(".modal-feedback-container");
 const feedbackClose = document.querySelector(".feedback-close-btn");
 const feedbackForm = feedbackPopup.querySelector(".modal-contact-form");
 const feedbackUsername = feedbackPopup.querySelector(".user-Name");
-const feedbackEmail = feedbackPopup.querySelector(".user-Email");
-const feedbackMessage = feedbackPopup.querySelector(".user-Message");
+const feedbackEmail = feedbackForm.querySelector(".user-Email");
+const feedbackMessage = feedbackForm.querySelector(".user-Message");
 
 let isStorageSupport = true;
 let storage = "";

@@ -817,8 +817,6 @@ search-field svg {
   position: relative;
 }
 
-
-
 .features-slide-title {
   margin: 0;
   padding: 0;
@@ -826,12 +824,11 @@ search-field svg {
   overflow: hidden;
   font-size: 36px;
   line-height: 36px;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
 }
-
 
 .slider-text-wrapper p {
   font-family: Cuprum, Arial, sans-serif;
@@ -882,7 +879,6 @@ search-field svg {
   background-color: var(--cardinal);
 }
 
-
 .slider-btn-back {
   position: absolute;
   left: 20px;
@@ -892,7 +888,7 @@ search-field svg {
   outline: 0;
   width: 23px;
   height: 41px;
- 
+
   z-index: 2;
 }
 
@@ -905,7 +901,7 @@ search-field svg {
   outline: 0;
   width: 23px;
   height: 41px;
- 
+
   z-index: 2;
 }
 
@@ -933,7 +929,6 @@ search-field svg {
   z-index: 2;
   transform: rotate(-180deg);
 }
-
 
 /*box-sizing: border-box;
   cursor: pointer;
@@ -1470,8 +1465,6 @@ color: var(--gulf-blue);
   border-top: 2px solid var(--china-blue);
 }
 
-
-
 .service-btn-credit:checked ~ .additional-services-slider {
   background-image: url(../img/service-credit.png);
 }
@@ -1718,7 +1711,6 @@ color: var(--gulf-blue);
 .modal-added-to-cart-container {
   display: none;
 }
-
 
 .modal-show {
   display: block;
@@ -2473,7 +2465,7 @@ color: var(--gulf-blue);
 }
 
 .price-controls input {
-  font-family: PT Sans, Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -2492,7 +2484,7 @@ color: var(--gulf-blue);
   flex-direction: column;
   padding: 0;
   border: 0;
-  border-bottom: 1px solid --silver;
+  border-bottom: 1px solid var(--silver);
 }
 
 .filter-by-charging {
@@ -2707,7 +2699,6 @@ color: var(--gulf-blue);
   color: var(--black);
   padding-bottom: 68px;
 }
-
 
 @keyframes bounce {
   0% {
