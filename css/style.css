@@ -817,6 +817,22 @@ search-field svg {
   position: relative;
 }
 
+
+
+.features-slide-title {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+
 .slider-text-wrapper p {
   font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
@@ -839,21 +855,6 @@ search-field svg {
   padding-bottom: 16px;
   box-sizing: border-box;
 }
-
-/*
-.slide-1 {
-  background-image: url(../img/slide1-perforator.jpg);
-  background-color: var(--dark-grey);
-}
-
-
-
-.slide-2 {
-    background-image: url(../img/slide2-drill.jpg);
-    background-color: var(--dark-grey);
-}
-
-*/
 
 .open-catalog-btn {
   left: 24px;
@@ -881,20 +882,30 @@ search-field svg {
   background-color: var(--cardinal);
 }
 
-.slider-btn-forward svg {
-  transform: rotate(-180deg);
-}
 
 .slider-btn-back {
   position: absolute;
-  left: 24px;
+  left: 20px;
   top: 122px;
   border: 0;
   padding: 0;
   outline: 0;
   width: 23px;
   height: 41px;
-  box-sizing: border-box;
+ 
+  z-index: 2;
+}
+
+.slider-btn-back svg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  width: 23px;
+  height: 41px;
+ 
   z-index: 2;
 }
 
@@ -909,6 +920,21 @@ search-field svg {
   height: 41px;
   z-index: 2;
 }
+
+.slider-btn-forward svg {
+  position: absolute;
+  right: 20px;
+  top: 122px;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  width: 23px;
+  height: 41px;
+  z-index: 2;
+  transform: rotate(-180deg);
+}
+
+
 /*box-sizing: border-box;
   cursor: pointer;
   background-color: transparent;*/
@@ -1444,13 +1470,7 @@ color: var(--gulf-blue);
   border-top: 2px solid var(--china-blue);
 }
 
-.service-btn-delivery:checked ~ .additional-services-slider {
-  background-image: url(../img/service-delivery.png);
-}
 
-.service-btn-guarantee:checked ~ .additional-services-slider {
-  background-image: url(../img/service-guarantee.png);
-}
 
 .service-btn-credit:checked ~ .additional-services-slider {
   background-image: url(../img/service-credit.png);
@@ -1695,8 +1715,18 @@ color: var(--gulf-blue);
   display: none;
 }
 
-.modal-added-to-card-container {
+.modal-added-to-cart-container {
   display: none;
+}
+
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-feedback {
@@ -2493,7 +2523,7 @@ color: var(--gulf-blue);
   width: 700px;
 }
 
-.modal-added-to-card {
+.modal-added-to-cart {
   background-color: var(--white);
   width: 620px;
   min-height: 282px;
@@ -2505,7 +2535,7 @@ color: var(--gulf-blue);
   z-index: 2;
 }
 
-.modal-added-to-card::before {
+.modal-added-to-cart::before {
   position: absolute;
   content: "";
   width: 66px;
@@ -2517,7 +2547,7 @@ color: var(--gulf-blue);
   left: 81px;
 }
 
-.modal-added-to-card p {
+.modal-added-to-cart p {
   font-family: Cuprum, Arial, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -2676,4 +2706,45 @@ color: var(--gulf-blue);
   line-height: 24px;
   color: var(--black);
   padding-bottom: 68px;
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

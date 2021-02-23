@@ -132,7 +132,8 @@
             </li>
           
           <li class="feature-item slider">
-            <button class="slider-btn slider-btn-back" type="button" disabled aria-label="Предыдущий слайд"><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+         
+            <button class="slider-btn slider-btn-back" type="button" aria-label="Предыдущий слайд" checked><svg width="22" height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
               </svg>
             </button>
@@ -140,12 +141,15 @@
               <path d="M19.9244 0.941406L21.9226 2.98921L4.90699 20.436L21.978 37.9375L19.9789 39.9853L0.910645 20.436L19.9244 0.941406Z" fill="white"/>
               </svg>
             </button>
+            
             <a class="open-catalog-btn uppercase" href="catalog.html">Открыть каталог</a>
+            
             <div class="slider slide-1">
             <div class="slider-text-wrapper">
             <h3 class="uppercase">Перфораторы</h3>
             <p>Настоящие мужские игрушки</p>
           </div>
+         
             <!--
             <img
               src="https://via.placeholder.com/620x266"
@@ -155,6 +159,7 @@
             />
             -->
           </div>
+          
           <!--
           <div class="slider slide-2">
             <div class="slider-text-wrapper">
@@ -416,7 +421,7 @@
         <section class="contacts">
           <h3 class="uppercase">Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="#">
+          <a class="map-link" href="#" aria-label="Открыть интерактивную карту проезда">
             <img
               src="img/map-preview.png"
               alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
@@ -433,7 +438,7 @@
       <section class="modal-feedback">
         <h2 class="hidden">Напишите нам</h2>
         
-        <button class="close-btn" type="button" aria-label="Закрыть"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="close-btn feedback-close-btn" type="button" aria-label="Закрыть"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
           </svg></button>
       
@@ -446,6 +451,7 @@
           <p class="contact-form-item">
             <label for="user-Name">Ваше имя:</label>
             <input
+            class="user-Name"
               id="user-Name"
               type="text"
               name="user-Name"
@@ -455,6 +461,7 @@
           <p class="contact-form-item">
             <label for="user-Email">Ваш e-mail:</label>
             <input
+            class="user-Email"
               id="user-Email"
               type="email"
               name="user-Email"
@@ -464,6 +471,7 @@
           <p class="contact-form-item">
             <label for="user-Message">Текст письма:</label>
             <textarea
+            class="user-Message"
               id="user-Message"
               name="user-Msg"
               cols="30"
@@ -492,7 +500,7 @@
         height="449"
         title="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></iframe>
         
-        <button class="close-btn" type="button" aria-label="Закрыть"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="close-btn map-close-btn" type="button" aria-label="Закрыть"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z" fill="#EE3643"/>
           </svg></button>
       </section>
@@ -589,5 +597,36 @@
     </div>
   </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
+
+<!--Поп-ап-->
+
+<div class="modal modal-added-to-cart-container">
+  <div class="modal-added-to-cart">
+    <button class="close-btn added-close-btn" type="button" aria-label="Закрыть">
+      <svg
+        width="21"
+        height="21"
+        viewBox="0 0 21 21"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z"
+          fill="#EE3643"
+        />
+      </svg>
+    </button>
+
+    <p>Товар добавлен в корзину!</p>
+
+    <div class="cart-btns-container">
+      <a class="btn-order uppercase" href="#">Оформить заказ</a>
+      <a class="btn-continue-shopping uppercase" href="#"
+        >Продолжить покупки</a
+      >
+    </div>
+  </div>
+</div>
