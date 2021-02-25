@@ -50,7 +50,7 @@
                 aria-label="Форма поиска по сайту"
                 autocomplete="off"
               />
-              <!-- <button class="button" id="search-submit" type="submit"></button>-->
+   
             </form>
           </div>
           <div class="header-buttons">
@@ -70,7 +70,7 @@
                 </g></svg
               >Закладки: <span>0</span></a
             >
-            <a class="header-btn-cart" href="#">Корзина: <span>0</span></a>
+            <a class="header-btn-cart" href="#">Корзина: <span class="goods-in-cart">0</span></a>
             <a class="header-btn-order" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -268,35 +268,20 @@
               <a class="open-catalog-btn uppercase" href="catalog.html"
                 >Открыть каталог</a
               >
-              <div class="slider slide-1">
+              <div class="slider slide-1 current">
                 <div class="slider-text-wrapper">
                   <h3 class="uppercase">Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
                 </div>
-                <!--
-            <img
-              src="https://via.placeholder.com/620x266"
-              alt="Рабочий сверлит стену перфоратором"
-              width="620"
-              height="266"
-            />
-            -->
               </div>
-              <!--
-          <div class="slider slide-2">
-            <div class="slider-text-wrapper">
-            <h3>ДРЕЛИ</h3>
-            <p>Соседям на радость!</p>
-            </div>
-            <img
-              src="https://via.placeholder.com/620x266"
-              alt="Рабочий сверлит стену дрелью"
-              width="620"
-              height="266"
-            />
-          </div>
-          -->
+          <div class="slider-controls">
+            <button class="slider-circle-1 current" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-circle-2" type="button" aria-label="Второй слайд"></button>
+        </div>
+             
+              
             </li>
+
             <li class="feature-item">
               <h3>Скидки 50%</h3>
               <svg
@@ -570,16 +555,50 @@
         </div>
       </div>
 
+      <!--Поп-ап-->
+
+      <div class="modal modal-added-to-cart-container">
+        <div class="modal-added-to-cart">
+          <button
+            class="close-btn added-close-btn"
+            type="button"
+            aria-label="Закрыть"
+          >
+            <svg
+              width="21"
+              height="21"
+              viewBox="0 0 21 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.2729 10.5L20.6949 3.07799C21.0839 2.68899 21.0839 2.05299 20.6949 1.66399L19.3359 0.304995C18.9469 -0.0840054 18.3109 -0.0840054 17.9219 0.304995L10.4999 7.72699L3.07793 0.304995C2.68893 -0.0840054 2.05293 -0.0840054 1.66393 0.304995L0.304934 1.66399C-0.0840664 2.05299 -0.0840664 2.68899 0.304934 3.07799L7.72693 10.5L0.305934 17.922C-0.0830664 18.311 -0.0830664 18.947 0.305934 19.336L1.66493 20.695C2.05393 21.084 2.68993 21.084 3.07893 20.695L10.5009 13.273L17.9229 20.695C18.3119 21.084 18.9479 21.084 19.3369 20.695L20.6959 19.336C21.0849 18.947 21.0849 18.311 20.6959 17.922L13.2729 10.5Z"
+                fill="#EE3643"
+              />
+            </svg>
+          </button>
+
+          <p>Товар добавлен в корзину!</p>
+
+          <div class="cart-btns-container">
+            <a class="btn-order uppercase" href="#">Оформить заказ</a>
+            <a class="btn-continue-shopping uppercase" href="#"
+              >Продолжить покупки</a
+            >
+          </div>
+        </div>
+      </div>
+
       <div class="additional-services-wrapper">
         <div class="services-info">
           <section class="additional-services">
             <h2 class="hidden">Дополнительные услуги</h2>
-            <h3 class="service-titles">Сервисы</h3>
+            <h3 class="service-title">Сервисы</h3>
             <p>
-              Хороший интернет-магазин отличается от плохого не только ценами!
+              Хороший интернет-магазин отличается от плохого не только ценами!<br>
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
-            <!--<div class="service-btn-slider-wrapper">-->
+            <div class="service-btn-slider-wrapper">
             <div class="additional-services-btn-wrapper">
               <input
                 type="radio"
@@ -600,7 +619,7 @@
                 id="service-btn-credit"
                 name="service-toggle"
               />
-              <!--<div class="additional-services-btn-controls">-->
+              
               <label
                 class="service-slider-control control-1"
                 for="service-btn-delivery"
@@ -617,30 +636,29 @@
                 >Кредит</label
               >
 
-              <!--</div>-->
             </div>
             <div class="additional-services-slider">
               <div class="service-slide delivery">
                 <p class="service-titles uppercase">Доставка</p>
-                <p>
+                <p class="service-pitch">
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                   совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
                   на ваш этаж!
                 </p>
               </div>
 
-              <div class="service-slide guarantee">
+              <div class="service-slide guarantee hidden">
                 <p class="service-titles uppercase">Гарантия</p>
-                <p>
+                <p class="service-pitch">
                   Если купленный и нас товар поломается и заискрит, а также в
                   случае пожара, спровоцированного его возгоранием, вы всегда
                   можете быть уверены в своей гарантии. Мы обменяем сгоревший
                   товар на новый. Дом уж восстановите как-нибудь сами.
                 </p>
               </div>
-              <div class="service-slide credit">
+              <div class="service-slide credit hidden">
                 <p class="service-titles uppercase">Кредит</p>
-                <p>
+                <p class="service-pitch">
                   Залезть в долговую яму стало проще! Кредитные консультанты
                   придут вам на помощь.
                 </p>
@@ -649,11 +667,12 @@
                 >
               </div>
             </div>
+          </div>
           </section>
         </div>
       </div>
 
-      <!--</div>-->
+      
 
       <section class="company-info">
         <h2 class="hidden">Общая информация о компании</h2>
@@ -702,6 +721,7 @@
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
             <a href="#">
               <img
+              class="map-link"
                 src="img/map-preview.png"
                 alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
                 width="300"
@@ -716,7 +736,7 @@
         <section class="modal-feedback">
           <h2 class="hidden">Напишите нам</h2>
 
-          <button class="close-btn" type="button" aria-label="Закрыть">
+          <button class="close-btn feedback-close-btn" type="button" aria-label="Закрыть">
             <svg
               width="21"
               height="21"
@@ -738,28 +758,31 @@
           >
             <div class="contact-form-container">
               <p class="contact-form-item">
-                <label for="user-Name">Ваше имя:</label>
+                <label for="user-name">Ваше имя:</label>
                 <input
-                  id="user-Name"
+                  class="user-name"
+                  id="user-name"
                   type="text"
-                  name="user-Name"
+                  name="user-name"
                   placeholder="Имя Фамилия"
                 />
               </p>
               <p class="contact-form-item">
-                <label for="user-Email">Ваш e-mail:</label>
+                <label for="user-email">Ваш e-mail:</label>
                 <input
-                  id="user-Email"
+                class="user-email"
+                  id="user-email"
                   type="email"
                   name="user-Email"
                   placeholder="e-mail@example.com"
                 />
               </p>
               <p class="contact-form-item">
-                <label for="user-Message">Текст письма:</label>
+                <label for="user-message">Текст письма:</label>
                 <textarea
-                  id="user-Message"
-                  name="user-Msg"
+                class="user-message"
+                  id="user-message"
+                  name="user-msg"
                   cols="30"
                   rows="5"
                   placeholder="В свободной форме"
@@ -778,6 +801,7 @@
         <section class="modal-map" id="Map">
           <h2 class="hidden">Как до нас добраться</h2>
           <iframe
+          
             width="943"
             height="449"
             title="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
@@ -785,7 +809,7 @@
             allowfullscreen
           ></iframe>
 
-          <button class="close-btn" type="button" aria-label="Закрыть">
+          <button class="close-btn map-close-btn" type="button" aria-label="Закрыть">
             <svg
               width="21"
               height="21"
