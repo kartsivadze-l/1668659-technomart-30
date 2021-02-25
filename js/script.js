@@ -92,18 +92,15 @@ const continueBtn = document.querySelector(".btn-continue-shopping");
 
 let goodsInCart = document.querySelector(".goods-in-cart");
 
-
-
 for (var i = 0; i < buyBtn.length; i++) {
-    buyBtn[i].addEventListener('click', function (evt) {
-        evt.preventDefault();
-        cartPopup.classList.add('modal-show'); 
-        
-        let count = Number(goodsInCart.innerHTML);
-        goodsInCart.innerHTML = count += 1;
-    });
+  buyBtn[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal-show");
+
+    let count = Number(goodsInCart.innerHTML);
+    goodsInCart.innerHTML = count += 1;
+  });
 }
-    
 
 cartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -120,16 +117,14 @@ window.addEventListener("keydown", function (evt) {
 });
 
 orderBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.remove("modal-show");
-  });
+  evt.preventDefault();
+  cartPopup.classList.remove("modal-show");
+});
 
-  continueBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    cartPopup.classList.remove("modal-show");
-  });
-
-  
+continueBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartPopup.classList.remove("modal-show");
+});
 
 /*const backBtn = document.querySelector('.slider-btn-back');
   const forwardBtn = document.querySelector('.slider-btn-forward');
@@ -161,61 +156,53 @@ arrowForward.addEventListener("click", function (evt) {
   });
   */
 
-  const deliveryBtn = document.querySelector(".service-btn-delivery");
-  const guaranteeBtn = document.querySelector(".service-btn-guarantee");
-  const creditBtn = document.querySelector(".service-btn-credit");
-  const delivery = document.querySelector(".delivery");
-  const guarantee = document.querySelector(".guarantee");
-  const credit = document.querySelector(".credit");
+const deliveryBtn = document.querySelector(".service-btn-delivery");
+const guaranteeBtn = document.querySelector(".service-btn-guarantee");
+const creditBtn = document.querySelector(".service-btn-credit");
+const delivery = document.querySelector(".delivery");
+const guarantee = document.querySelector(".guarantee");
+const credit = document.querySelector(".credit");
 
-  deliveryBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    delivery.classList.remove("hidden");
-    guarantee.classList.add("hidden");
-    credit.classList.add("hidden");
-  });
+deliveryBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  delivery.classList.remove("hidden");
+  guarantee.classList.add("hidden");
+  credit.classList.add("hidden");
+});
 
-  guaranteeBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    guarantee.classList.remove("hidden");
-    delivery.classList.add("hidden");
-    credit.classList.add("hidden");
-  });
+guaranteeBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  guarantee.classList.remove("hidden");
+  delivery.classList.add("hidden");
+  credit.classList.add("hidden");
+});
 
-  creditBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    credit.classList.remove("hidden");
-    delivery.classList.add("hidden");
-    guarantee.classList.add("hidden");
-  });
+creditBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  credit.classList.remove("hidden");
+  delivery.classList.add("hidden");
+  guarantee.classList.add("hidden");
+});
 
- const arrowBack = document.querySelector(".slider-btn-back");
- const arrowForward = document.querySelector(".slider-btn-forward");
- const circle1 = document.querySelector(".slider-circle-1");
- const circle2 = document.querySelector(".slider-circle-2");
- const slide1 = document.querySelector(".slide-1");
- const slide2 = document.querySelector(".slide-2");
+const circle1 = document.querySelector(".slider-circle-1");
+const circle2 = document.querySelector(".slider-circle-2");
+const slide1 = document.querySelector(".slide-1");
+const slide2 = document.querySelector(".slide-2");
 
- arrowBack.addEventListener('click', function() {
-     slide1.classList.toggle("current");
-     slide2.classList.toggle("current");
- }
- )
- arrowForward.addEventListener('click', function() {
-    slide1.classList.toggle("current");
-    slide2.classList.toggle("current");
-}
-)
+arrowBack.addEventListener("click", function () {
+  slide1.classList.toggle("current");
+  slide2.classList.toggle("current");
+});
+arrowForward.addEventListener("click", function () {
+  slide1.classList.toggle("current");
+  slide2.classList.toggle("current");
+});
 
-circle1.addEventListener('click', function() {
-    slide1.classList.add("current");
-    slide2.classList.remove("current");
-}
-)
-circle2.addEventListener('click', function() {
-    slide2.classList.add("current");
-   slide1.classList.remove("current");
-   
-}
-)
- 
+circle1.addEventListener("click", function () {
+  slide1.classList.add("current");
+  slide2.classList.remove("current");
+});
+circle2.addEventListener("click", function () {
+  slide2.classList.add("current");
+  slide1.classList.remove("current");
+});
