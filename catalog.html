@@ -55,8 +55,6 @@
               aria-label="Форма поиска по сайту"
               autocomplete="off"
             />
-
-            <!--<button class="search-field-btn" id="search-submit" type="submit"></button>-->
           </form>
 
           <div class="header-btn-wrapper">
@@ -65,7 +63,7 @@
             >
 
             <a class="header-btn-cart-full" href="#"
-              >Корзина: <span>10</span></a
+              >Корзина: <span class="goods-in-cart">10</span></a
             >
 
             <a class="header-btn-order" href="#">Оформить заказ</a>
@@ -635,9 +633,13 @@
 
       <!--Поп-ап-->
 
-      <div class="modal modal-added-to-card-container">
-        <div class="modal-added-to-card">
-          <button class="close-btn" type="button" aria-label="Закрыть">
+      <div class="modal modal-added-to-cart-container">
+        <div class="modal-added-to-cart">
+          <button
+            class="close-btn added-close-btn"
+            type="button"
+            aria-label="Закрыть"
+          >
             <svg
               width="21"
               height="21"
@@ -839,5 +841,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/catalog.js"></script>
   </body>
 </html>
