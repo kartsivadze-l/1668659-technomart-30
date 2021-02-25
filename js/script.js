@@ -126,35 +126,7 @@ continueBtn.addEventListener("click", function (evt) {
   cartPopup.classList.remove("modal-show");
 });
 
-/*const backBtn = document.querySelector('.slider-btn-back');
-  const forwardBtn = document.querySelector('.slider-btn-forward');
-  const slider = document.querySelector('.slider');
 
-  backBtn.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    slider
-  });
-  */
-const slider = document.querySelector(".slider");
-const arrowBack = document.querySelector(".slider-btn-back");
-const arrowForward = document.querySelector(".slider-btn-forward");
-const sliderH = document.querySelector(".slider-h");
-const sliderP = document.querySelector(".slider-p");
-
-/*arrowBack.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    slider.classList.remove("slider-2");
-    slider.classList.add("slider-1");
-  });
-
-arrowForward.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    slider.classList.remove("slider-1");
-    slider.classList.add("slider-2");
-    sliderH.textContent = "Дрели";
-    sliderP.textContent = "Соседям на радость!";
-  });
-  */
 
 const deliveryBtn = document.querySelector(".service-btn-delivery");
 const guaranteeBtn = document.querySelector(".service-btn-guarantee");
@@ -183,6 +155,12 @@ creditBtn.addEventListener("click", function (evt) {
   delivery.classList.add("hidden");
   guarantee.classList.add("hidden");
 });
+
+
+const slider = document.querySelector(".slider");
+const arrowBack = document.querySelector(".slider-btn-back");
+const arrowForward = document.querySelector(".slider-btn-forward");
+
 
 const circle1 = document.querySelector(".slider-circle-1");
 const circle2 = document.querySelector(".slider-circle-2");
