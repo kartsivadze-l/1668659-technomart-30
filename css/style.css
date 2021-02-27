@@ -1470,7 +1470,7 @@ color: var(--gulf-blue);
   ~ .service-slider-control.control-3 {
   color: var(--china-blue);
   background-color: var(--white);
-  box-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+  box-shadow: 0px 1px 0px var(--white);
   border-top: 2px solid var(--china-blue);
 }
 
