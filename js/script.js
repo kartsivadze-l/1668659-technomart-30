@@ -140,6 +140,9 @@ deliveryBtn.addEventListener("click", function (evt) {
   delivery.classList.remove("hidden");
   guarantee.classList.add("hidden");
   credit.classList.add("hidden");
+  deliveryBtn.classList.add("active");
+  guaranteeBtn.classList.remove("active");
+  creditBtn.classList.remove("active");
 });
 
 guaranteeBtn.addEventListener("click", function (evt) {
@@ -147,6 +150,9 @@ guaranteeBtn.addEventListener("click", function (evt) {
   guarantee.classList.remove("hidden");
   delivery.classList.add("hidden");
   credit.classList.add("hidden");
+  guaranteeBtn.classList.add("active");
+  deliveryBtn.classList.remove("active");
+  creditBtn.classList.remove("active");
 });
 
 creditBtn.addEventListener("click", function (evt) {
@@ -154,6 +160,9 @@ creditBtn.addEventListener("click", function (evt) {
   credit.classList.remove("hidden");
   delivery.classList.add("hidden");
   guarantee.classList.add("hidden");
+  creditBtn.classList.add("active");
+  deliveryBtn.classList.remove("active");
+  guaranteeBtn.classList.remove("active");
 });
 
 
