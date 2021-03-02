@@ -135,7 +135,7 @@
   --black-025: rgba(0, 0, 0, 0.25);
   --dark-grey-03: rgba(171, 171, 71, 0.3);
   /*Borders*/
-  --strong-red: #BA2732;
+  --strong-red: #ba2732;
   --whisper: #e5e5e5;
   --pattens-blue: #d7dcde;
   --jade: #00ca74;
@@ -540,7 +540,6 @@ img {
   width: 100%;
   background-color: var(--alice-blue);
 }
-
 
 .main-bar address {
   font-family: Cuprum, Arial, sans-serif;
@@ -1691,7 +1690,8 @@ img {
   line-height: 18px;
   color: var(--white);
   background-color: var(
-    --amaranth); /* в макете в одном месте эта кнопка цвета amaranth, а в другом – radical red*/
+    --amaranth
+  ); /* в макете в одном месте эта кнопка цвета amaranth, а в другом – radical red*/
   width: 195px;
   height: 38px;
   padding-left: 8px;
@@ -2570,7 +2570,6 @@ img {
   border: 4px solid var(--silver);
   border-radius: 50%;
 }
-
 
 .filter-input-radio:checked + label::after {
   content: "";
