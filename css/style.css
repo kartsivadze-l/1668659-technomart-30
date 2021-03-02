@@ -1521,7 +1521,22 @@ img {
   margin-top: 57px;
 }
 
+.guarantee .service-titles {
+  margin-top: 59px;
+  margin-bottom: 23px;
+}
+
+.credit .service-titles {
+  margin-top: 59px;
+}
+
 .service-pitch {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--black);
   padding-left: 80px;
   white-space: nowrap;
 }
@@ -1534,14 +1549,6 @@ img {
   line-height: 30px;
   color: var(--china-blue);
   position: relative;
-}
-.service-slide p {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
-  color: var(--black);
 }
 
 .service-btn-delivery,
@@ -1648,8 +1655,7 @@ img {
   line-height: 18px;
   color: var(--white);
   background-color: var(
-    --amaranth
-  ); /* в макете в одном месте эта кнопка цвета amaranth, а в другом – radical red*/
+    --amaranth); /* в макете в одном месте эта кнопка цвета amaranth, а в другом – radical red*/
   width: 195px;
   height: 38px;
   padding-top: 10px;
@@ -1661,6 +1667,7 @@ img {
   padding-right: 9px;
   margin-top: 13px;
   margin-left: 80px;
+  margin-bottom: 16px;
   display: inline-block;
   text-align: center;
 }
