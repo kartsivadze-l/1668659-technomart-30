@@ -122,6 +122,8 @@
   --radical-red: #ff5357;
   --old-lace: #f7f3ec;
   --chambray: #3d546f;
+  --squirrel: #927f6e;
+  --grayish-red: #684b3e;
   --silver-03: rgba(197, 197, 197, 0.3);
   --dark-grey-03: rgba(169, 169, 169, 0.3);
   --white-025: rgba(0, 0, 0, 0.25);
@@ -133,6 +135,7 @@
   --black-025: rgba(0, 0, 0, 0.25);
   --dark-grey-03: rgba(171, 171, 71, 0.3);
   /*Borders*/
+  --strong-red: #BA2732;
   --whisper: #e5e5e5;
   --pattens-blue: #d7dcde;
   --jade: #00ca74;
@@ -220,8 +223,7 @@ img {
   color: var(--white);
   background-color: var(--amaranth);
   width: 220px;
-  height: 47px;
-  box-shadow: inset 0px -5px 0px var(--white-024);
+  height: 43px;
   margin: 0;
   padding-right: 56px;
   position: relative;
@@ -241,18 +243,39 @@ img {
   left: 56px;
 }
 
-.logo:active {
+.logo::after {
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 5px;
+  background-color: var(--strong-red);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 43px;
+  left: 0;
+}
+
+.logo:active,
+.footer-logo:active {
   background-color: var(--cardinal);
 }
 
-.footer.logo {
+.footer-logo {
+  color: var(--white);
+  background-color: var(--amaranth);
+  width: 220px;
+  height: 43px;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+  float: left;
   padding: 20px 41px 25px 41px;
   position: relative;
   box-sizing: border-box;
   height: 68px;
 }
 
-.footer.logo::before {
+.footer-logo::before {
   position: absolute;
   width: 138px;
   height: 23px;
@@ -263,6 +286,18 @@ img {
   top: 20px;
   left: 41px;
   padding-bottom: 25px;
+}
+
+.footer-logo::after {
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 5px;
+  background-color: var(--strong-red);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 63px;
+  left: 0;
 }
 
 .upper-bar-options {
@@ -474,16 +509,16 @@ img {
   color: var(--amaranth);
   width: 197px;
   padding-left: 30px;
-  margin-top: 40px;
+  margin-top: 42px;
 }
 
 .main-address {
-  margin-top: 10px;
+  margin-top: 53px;
   margin-left: 24px;
 }
 
 .catalog-address {
-  margin-top: 10px;
+  margin-top: 53px;
   margin-left: 39px;
 }
 
@@ -496,7 +531,7 @@ img {
 .mid-header {
   width: 940px;
   margin: 0 auto;
-  padding-bottom: 27px;
+  padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
 }
@@ -506,9 +541,6 @@ img {
   background-color: var(--alice-blue);
 }
 
-.mid-header address {
-  padding-top: 38px;
-}
 
 .main-bar address {
   font-family: Cuprum, Arial, sans-serif;
@@ -557,7 +589,7 @@ img {
 .user-block-options-container {
   background-color: var(--alice-blue);
   position: relative;
-  padding-top: 52px;
+  padding-top: 57px;
 }
 
 .options-container {
@@ -571,7 +603,7 @@ img {
 
 .personal-info:first-child {
   position: relative;
-  padding-right: 30px;
+  padding-right: 31px;
 }
 
 .personal-info:first-child::after {
@@ -589,7 +621,7 @@ img {
 }
 
 .user-block-main {
-  margin-top: 48px;
+  margin-top: 53px;
 }
 
 .login-btn,
@@ -726,6 +758,8 @@ img {
   margin: 0 auto;
   background-color: var(--alice-blue);
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .features-list {
@@ -907,12 +941,14 @@ img {
 
 .slide-1 {
   display: none;
+  background-color: var(--squirrel);
   background-image: url(../img/slide1-perforator.jpg);
 }
 
 .slide-2 {
-  background-image: url(../img/slide2-drill.jpg);
   display: none;
+  background-color: var(--grayish-red);
+  background-image: url(../img/slide2-drill.jpg);
 }
 
 .current {
@@ -1425,7 +1461,6 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  display: inline-block;
 }
 
 .button-goods-bookmarks:hover {
@@ -1522,12 +1557,12 @@ img {
 }
 
 .guarantee .service-titles {
-  margin-top: 59px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .credit .service-titles {
   margin-top: 59px;
+  margin-bottom: 29px;
 }
 
 .service-pitch {
@@ -1568,6 +1603,7 @@ img {
   border: none;
   box-shadow: 0px 1px 0px var(--bunting), inset 0px 1px 0px var(--faux-police);
   height: 61px;
+  box-sizing: border-box;
 }
 
 .service-btn-delivery {
@@ -1658,18 +1694,19 @@ img {
     --amaranth); /* в макете в одном месте эта кнопка цвета amaranth, а в другом – radical red*/
   width: 195px;
   height: 38px;
+  padding-left: 8px;
+  padding-right: 9px;
   padding-top: 10px;
   padding-bottom: 10px;
   box-shadow: 0px 4px 4px var(--black-025);
   border-radius: 2px;
   box-sizing: border-box;
-  padding-left: 8px;
-  padding-right: 9px;
   margin-top: 13px;
   margin-left: 80px;
   margin-bottom: 16px;
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
 }
 
 .want-credit-btn:hover {
@@ -2084,7 +2121,7 @@ img {
 }
 
 .footer-nav-2 {
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 .footer-nav-list {
@@ -2157,9 +2194,6 @@ img {
   margin-right: 118px;
   display: flex;
 }
-/*.id-user-options-container {
-  padding-top: 49px;
-}*/
 
 .personal-info,
 .personal-info:visited {
@@ -2514,6 +2548,18 @@ img {
   background-repeat: no-repeat;
 }
 
+.filter-input-checkbox:checked + label:first-of-type::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -2px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
 .filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
@@ -2524,6 +2570,7 @@ img {
   border: 4px solid var(--silver);
   border-radius: 50%;
 }
+
 
 .filter-input-radio:checked + label::after {
   content: "";
@@ -2720,6 +2767,7 @@ img {
   box-sizing: border-box;
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
   width: 192px;
   padding-top: 11px;
   padding-bottom: 9px;
@@ -2742,6 +2790,7 @@ img {
   padding-top: 11px;
   padding-bottom: 9px;
   text-align: center;
+  vertical-align: middle;
   margin-top: 37px;
   margin-left: 6px;
 }
