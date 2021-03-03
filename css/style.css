@@ -201,6 +201,8 @@ img {
 .service-btn-guarantee:active,
 .service-btn-credit:active,
 .button-goods-buy:active,
+.slider-circle-1:focus-within,
+.slider-circle-2:focus-within,
 .slider-circle-1:active,
 .slider-circle-2:active,
 .close-btn:active {
