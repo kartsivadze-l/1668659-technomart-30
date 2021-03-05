@@ -186,10 +186,14 @@ arrowForward.addEventListener("click", function () {
 });
 
 circle1.addEventListener("click", function () {
+  circle1.classList.add("current-circle");
+  circle2.classList.remove("current-circle");
   slide1.classList.add("current");
   slide2.classList.remove("current");
 });
 circle2.addEventListener("click", function () {
+  circle2.classList.add("current-circle");
+  circle1.classList.remove("current-circle");
   slide2.classList.add("current");
   slide1.classList.remove("current");
 });
