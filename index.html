@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="img/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/180.png" />
@@ -152,9 +152,8 @@
         <section class="features">
           <h2 class="hidden">Услуги</h2>
           <ul class="features-list">
-            <li class="feature-item">
+            <li class="feature-item feature-new">
               <h3>Материалы</h3>
-              <p class="new-product new-promo uppercase">new</p>
               <svg
                 aria-hidden="true"
                 width="44"
@@ -292,7 +291,7 @@
               </div>
               <div class="slider-controls">
                 <button
-                  class="slider-circle-1 current"
+                  class="slider-circle-1 current-circle"
                   type="button"
                   aria-label="Первый слайд"
                 ></button>
@@ -381,8 +380,8 @@
           <section class="popular-goods">
             <div class="popular-wrapper">
               <h2 class="uppercase">Популярные товары:</h2>
-              <a class="main-button all-popular-goods-btn" href="#"
-                >ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a
+              <a class="main-button all-popular-goods-btn uppercase" href="#"
+                >Все популярные товары</a
               >
             </div>
             <div class="all-product-cards main">
@@ -413,9 +412,8 @@
                   </button>
                 </div>
               </article>
-              <article class="product-card main">
+              <article class="product-card main item-new">
                 <h3>Перфоратор BOSCH BFG 3000</h3>
-                <p class="new-product new-popular uppercase">new</p>
 
                 <img
                   class="product-card-image bfg3000"
@@ -469,9 +467,8 @@
                   </button>
                 </div>
               </article>
-              <article class="product-card main">
+              <article class="product-card main item-new">
                 <h3>Перфоратор BOSCH BFG 2000</h3>
-                <p class="new-product new-popular uppercase">new</p>
 
                 <img
                   class="product-card-image bfg2000"
@@ -910,6 +907,7 @@
                     /></svg
                 ></a>
               </li>
+              
               <li class="social-btn">
                 <a href="#" aria-label="Фейсбук">
                   <svg
@@ -981,6 +979,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
