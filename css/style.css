@@ -1106,9 +1106,13 @@ img {
   left: 8px;
 }
 
-.all-popular-brands a:hover {
+.all-popular-brands a:hover,
+.all-popular-brands a:focus,
+.all-popular-brands a:focus-within
+ {
   box-shadow: 0px 4px 20px var(--black-015);
 }
+
 .all-popular-brands a:active {
   opacity: 0.5;
 }
@@ -1191,6 +1195,7 @@ img {
   width: 144px;
   padding: 10px 24px 9px 24px;
   display: inline-block;
+  vertical-align: middle;
   margin-bottom: 20px;
 }
 
@@ -1216,6 +1221,7 @@ img {
 
 .all-brands-btn {
   display: inline-block;
+  vertical-align: middle;
   margin-top: -8px;
   margin-bottom: 20px;
   width: 115px;
@@ -1308,7 +1314,8 @@ img {
   margin-bottom: 19px;
 }
 
-.product-card:hover {
+.product-card:hover,
+.product-card:focus-within {
   box-shadow: 0px 4px 20px var(--black-015);
 }
 
@@ -1318,15 +1325,18 @@ img {
   display: none;
 }
 
-.product-card:hover h3 {
+.product-card:hover h3,
+.product-card:focus-within h3 {
   order: 1;
 }
 
-.product-card:hover .old-price {
+.product-card:hover .old-price,
+.product-card:focus-within .old-price {
   order: 2;
 }
 
-.product-card:hover .price {
+.product-card:hover .price,
+.product-card:focus-within .price {
   order: 3;
 }
 
@@ -1334,7 +1344,8 @@ img {
   display: none;
 }
 
-.product-card:hover .product-pop-up {
+.product-card:hover .product-pop-up,
+.product-card:focus-within .product-pop-up {
   position: absolute;
   top: 38px;
   right: 44px;
@@ -1414,16 +1425,17 @@ img {
 .price::after {
   content: "";
   position: absolute;
-  width: 40px;
+  width: 20px;
   height: 100%;
   background-repeat: no-repeat;
   background-position: 0 0;
   left: 122px;
   top: 0;
-  bottom: 0;
   z-index: -1;
-  background-color: var(--kelly-green);
-  transform: rotate(45deg);
+  background-color: var(--amaranth);
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+
+  /*transform: rotate(45deg);*/
   /*border: 10px solid transparent;
     border-left: 40px solid green;*/
 
