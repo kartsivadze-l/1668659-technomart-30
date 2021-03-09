@@ -248,12 +248,18 @@ img {
 .upper-bar-wrapper {
   width: 100%;
   background-color: var(--bunting);
-  position: relative;
+  /*position: relative;*/
 }
 
 .upper-bar {
   width: 940px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-search {
+  display: flex;
 }
 
 .logo {
@@ -263,9 +269,9 @@ img {
   height: 43px;
   margin: 0;
   padding-right: 56px;
-  position: relative;
+  
   box-sizing: border-box;
-  float: left;
+  position: relative;
 }
 
 .logo::before {
@@ -305,7 +311,6 @@ img {
   margin: 0;
   position: relative;
   box-sizing: border-box;
-  float: left;
   padding: 20px 41px 25px 41px;
   position: relative;
   box-sizing: border-box;
@@ -337,11 +342,6 @@ img {
   left: 0;
 }
 
-.upper-bar-options {
-  display: flex;
-  justify-content: space-between;
-}
-
 .search-window {
   border: 0;
   outline: 0;
@@ -356,7 +356,6 @@ img {
   padding-bottom: 9px;
   padding-left: 42px;
   width: 271px;
-  outline: 2px solid green;
 }
 
 .search-window:focus-within {
@@ -389,13 +388,7 @@ img {
 }
 
 .search-field {
-  position: absolute;
-}
-
-.search-field label {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
 }
 
 .search-field svg {
@@ -420,8 +413,7 @@ img {
 }
 
 .header-buttons {
-  display: flex; 
-  outline: 2px solid red;
+  display: flex;
 }
 
 .header-btn-bookmarks,
@@ -438,14 +430,14 @@ img {
 }
 .header-btn-bookmarks {
   position: relative;
-  margin-right: 29px;
-  padding-left: 0;
+  padding-left: 19px;
   padding-top: 7px;
+  padding-right: 52px;
   padding-bottom: 8px;
 }
 
 .header-btn-bookmarks.catalog {
-  margin-right: 17px;
+  padding-right: 39px;
 }
 
 .header-btn-bookmarks svg {
@@ -471,7 +463,7 @@ img {
   line-height: 24px;
   color: var(--white);
   background-color: var(--amaranth);
-  padding: 9px 21px 9px 35px;
+  padding: 9px 20px 9px 35px;
   position: relative;
 }
 
@@ -489,7 +481,8 @@ img {
 
 .header-btn-cart {
   position: relative;
-  padding: 10px 28px 5px 21px;
+  padding: 10px 28px 5px 2px;
+  padding-left: 20px;
 }
 
 .header-btn-cart::before {
@@ -520,7 +513,6 @@ img {
 
 .header-btn-order {
   background-color: var(--apple);
-  margin-right: -10px;
   padding-top: 9px;
   padding-bottom: 6px;
   padding-right: 17px;
