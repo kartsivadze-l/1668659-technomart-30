@@ -283,6 +283,7 @@
                   name="checkbox"
                   value="makita"
                   checked
+                  
                 />
                 <label for="checkbox-3" class="uppercase">Makita</label>
                 <input
@@ -299,6 +300,7 @@
                   type="checkbox"
                   name="checkbox"
                   value="hitachi"
+                 
                 />
                 <label for="checkbox-5" class="uppercase">Hitachi</label>
               </fieldset>
@@ -311,6 +313,7 @@
                   name="radiogroup"
                   value="battery"
                   checked
+                  
                 />
                 <label for="radio-1" class="uppercase">Аккумуляторные</label>
                 <input
@@ -335,7 +338,7 @@
             <div class="sorting-bar">
               <h2 class="uppercase">Сортировка:</h2>
               <ul class="sort-by">
-                <li class="sort-by-option uppercase">
+                <li class="sort-by-option chosen-option uppercase">
                   <a href="#">По цене</a>
                 </li>
 
@@ -347,7 +350,7 @@
                 </li>
                 <li>
                   <a
-                    class="up"
+                    class="up chosen-direction"
                     href="#"
                     aria-label="Сортировать по возрастанию"
                   >
@@ -388,7 +391,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -414,7 +417,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -440,7 +443,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -467,7 +470,7 @@
                   height="112"
                 />
 
-                <span class="old-price" aria-label="Старая цена">22500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">22500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">15500 Р.</p>
                 </div>
@@ -493,7 +496,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -544,7 +547,7 @@
                   height="112"
                 />
 
-                <span class="old-price" aria-label="Старая цена">22500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">22500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">15500 Р.</p>
                 </div>
@@ -570,7 +573,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -619,14 +622,14 @@
         <ul class="paginator">
           <li>
             <a
-              class="paginator-link active"
+              class="paginator-link paginator-link1 active-page"
               aria-label="Перейти на текущую страницу каталога"
               >1</a
             >
           </li>
           <li>
             <a
-              class="paginator-link"
+              class="paginator-link paginator-link2"
               href="#"
               aria-label="Перейти на вторую страницу каталога"
               >2</a
@@ -634,7 +637,7 @@
           </li>
           <li>
             <a
-              class="paginator-link"
+              class="paginator-link paginator-link3"
               href="#"
               aria-label="Перейти на третью страницу каталога"
               >3</a
@@ -642,7 +645,7 @@
           </li>
           <li>
             <a
-              class="paginator-link next uppercase"
+              class="paginator-link paginator-link-next next uppercase"
               href="#"
               aria-label="Перейти на следующую страницу каталога"
               >Следующая</a
@@ -858,6 +861,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/catalog.min.js"></script>
+    <script src="js/catalog.js"></script>
   </body>
 </html>
