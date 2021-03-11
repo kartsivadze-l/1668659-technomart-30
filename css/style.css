@@ -432,17 +432,18 @@ img {
   color: var(--white);
   box-sizing: border-box;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .header-btn-bookmarks {
   position: relative;
-  width: 155px;
+  width: 169px;
   padding-top: 9px;
-  /*padding-left: 35px;*/
   padding-bottom: 6px;
 }
 
 .header-btn-bookmarks.catalog {
-  margin-left: 7px;
+  width: 164px;
 }
 
 .header-btn-bookmarks::before {
@@ -452,7 +453,7 @@ img {
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-bookmark.svg");
-  left: 12px;
+  left: 19px;
   top: 13px;
   opacity: 0.3;
 }
@@ -467,10 +468,11 @@ img {
   width: 136px;
   background-color: var(--amaranth);
   box-sizing: border-box;
+  text-align: center;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-left: 20px;
-  /*padding: 9px 20px 9px 35px;*/
+  padding-left: 19px;
+  padding-right: 10px;
   position: relative;
 }
 
@@ -487,10 +489,9 @@ img {
 }
 
 .header-btn-cart {
+  width: 130px;
   position: relative;
-  width: 137px;
   padding-top: 10px;
-  padding-left: 10px;
   padding-bottom: 5px;
 }
 
@@ -501,7 +502,7 @@ img {
   width: 15px;
   height: 15px;
   background-image: url("../img/icon-cart.svg");
-  left: 12px;
+  left: 6px;
   top: 13px;
   opacity: 0.3;
 }
@@ -522,8 +523,6 @@ img {
 .header-btn-order {
   background-color: var(--apple);
   width: 150px;
-  padding-left: 5px;
-  padding-right: 5px;
   padding-top: 9px;
   padding-bottom: 6px;
 }
