@@ -170,7 +170,7 @@
   --whisper: #e5e5e5;
   --pattens-blue: #d7dcde;
   --jade: #00ca74;
-  --pink-swan: #B5B5B5;
+  --pink-swan: #b5b5b5;
 }
 
 /*Global*/
@@ -229,7 +229,10 @@ img {
   background-color: var(--cardinal);
 }
 
-
+.service-btn-delivery:active,
+.service-btn-guarantee:active,
+.service-btn-credit:active,
+.button-goods-buy.active,
 .service-btn-delivery.active,
 .service-btn-guarantee.active,
 .service-btn-credit.active,
@@ -432,8 +435,8 @@ img {
   color: var(--white);
   box-sizing: border-box;
   text-align: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .header-btn-bookmarks {
   position: relative;
@@ -1461,9 +1464,10 @@ img {
   z-index: 2;
   padding: 0;
   padding-top: 9px;
-  padding-left: 5px;
+  padding-left: 9px;
+  padding-right: 5px;
   padding-bottom: 10px;
-  width: 118px;
+  width: 123px;
   margin: 0;
   margin-top: 0;
   margin-left: 45px;
@@ -1472,6 +1476,7 @@ img {
   text-align: center;
   background-color: var(--amaranth);
   border-radius: 2px;
+  box-sizing: border-box;
 }
 
 .price::after {
@@ -1492,6 +1497,8 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: var(--dark-grey);
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: center;
   box-sizing: border-box;
   display: block;
@@ -1516,6 +1523,8 @@ img {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 17px;
+  padding-right: 5px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -1529,7 +1538,7 @@ img {
   background-repeat: no-repeat;
   background-image: url(../img/icon-cart.svg);
   top: 10px;
-  left: 22px;
+  left: 29px;
   opacity: 0.3;
 }
 
@@ -1551,6 +1560,8 @@ img {
   box-sizing: border-box;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   text-align: center;
 }
 
@@ -1716,7 +1727,6 @@ img {
   background-color: var(--bunting);
 }
 
-
 .service-btn-delivery.active,
 .service-btn-guarantee.active,
 .service-btn-credit.active {
@@ -1789,7 +1799,9 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: var(--white);
-  background-color: var( --amaranth); /* в макете в одном месте эта кнопка цвета amaranth, а в другом – radical red*/
+  background-color: var(
+    --amaranth
+  ); /* в макете в одном месте эта кнопка цвета amaranth, а в другом – radical red*/
   width: 195px;
   height: 38px;
   padding-left: 8px;
@@ -2709,19 +2721,19 @@ img {
 .filter-input-checkbox:checked:focus + label::after,
 .filter-input-radio:hover + label::before,
 .filter-input-radio:focus + label::before {
-border-color: var(--pink-swan);
+  border-color: var(--pink-swan);
 }
 
 .filter-input-checkbox:hover + label::before,
 .filter-input-checkbox:focus + label::before,
 .filter-input-checkbox:checked:hover + label::after,
 .filter-input-checkbox:checked:focus + label::after {
-opacity: 1;
+  opacity: 1;
 }
 
 .filter-input-radio:checked:hover + label::after,
 .filter-input-radio:checked:focus + label::after {
-background-color: var(--pink-swan);
+  background-color: var(--pink-swan);
 }
 
 .filter-input-checkbox:disabled + label,
