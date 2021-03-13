@@ -14,9 +14,8 @@
     <header>
       <div class="upper-bar-wrapper">
         <div class="upper-bar">
-          <a href="index.html" class="logo" title="Логотип Техномарт"></a>
-
-          <div class="upper-bar-options">
+          <div class="logo-search">
+            <a href="index.html" class="logo" title="Логотип Техномарт"></a>
             <div class="search-form-container">
               <form
                 class="search-field"
@@ -34,7 +33,6 @@
                 >
                   <g opacity="0.3">
                     <path
-                      class="upper-icons"
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
@@ -55,21 +53,9 @@
                 </label>
               </form>
             </div>
+
             <div class="header-buttons">
               <a class="header-btn-bookmarks catalog" href="#"
-                ><svg
-                  width="14"
-                  height="16"
-                  viewBox="0 0 14 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g opacity="0.3">
-                    <path
-                      d="M14 15C14 15.55 13.632 15.741 13.182 15.426L7.819 11.661C7.369 11.346 6.632 11.346 6.182 11.661L0.818 15.426C0.368 15.741 0 15.55 0 15V1C0 0.45 0.45 0 1 0H13C13.55 0 14 0.45 14 1V15Z"
-                      fill="white"
-                    />
-                  </g></svg
                 >Закладки: <span>0</span></a
               >
               <a class="header-btn-cart-full" href="#"
@@ -274,7 +260,6 @@
                   type="checkbox"
                   name="checkbox"
                   value="interscol"
-                  disabled
                 />
                 <label for="checkbox-2" class="uppercase">Интерскол</label>
                 <input
@@ -336,7 +321,7 @@
             <div class="sorting-bar">
               <h2 class="uppercase">Сортировка:</h2>
               <ul class="sort-by">
-                <li class="sort-by-option uppercase">
+                <li class="sort-by-option chosen-option uppercase">
                   <a href="#">По цене</a>
                 </li>
 
@@ -348,7 +333,7 @@
                 </li>
                 <li>
                   <a
-                    class="up"
+                    class="up chosen-direction"
                     href="#"
                     aria-label="Сортировать по возрастанию"
                   >
@@ -389,7 +374,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -415,7 +400,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -431,7 +416,7 @@
                   </button>
                 </div>
               </article>
-              <article class="product-card catalog item-new">
+              <article class="new product-card catalog">
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <img
                   class="product-card-image bfg6000"
@@ -441,7 +426,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -457,7 +442,7 @@
                   </button>
                 </div>
               </article>
-              <article class="product-card catalog item-new">
+              <article class="product-card catalog new">
                 <h3>Перфоратор BOSCH BFG 3000</h3>
 
                 <img
@@ -468,7 +453,7 @@
                   height="112"
                 />
 
-                <span class="old-price" aria-label="Старая цена">22500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">22500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">15500 Р.</p>
                 </div>
@@ -494,7 +479,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -510,7 +495,7 @@
                   </button>
                 </div>
               </article>
-              <article class="product-card catalog item-new">
+              <article class="product-card catalog new">
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <img
                   class="product-card-image bfg2000"
@@ -535,7 +520,7 @@
                   </button>
                 </div>
               </article>
-              <article class="product-card catalog item-new">
+              <article class="product-card catalog new">
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <img
                   class="product-card-image bfg3000"
@@ -545,7 +530,7 @@
                   height="112"
                 />
 
-                <span class="old-price" aria-label="Старая цена">22500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">22500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">15500 Р.</p>
                 </div>
@@ -571,7 +556,7 @@
                   height="128"
                 />
 
-                <span class="old-price" aria-label="Старая цена">30500 Р.</span>
+                <del class="old-price" aria-label="Старая цена">30500 Р.</del>
                 <div class="price-container">
                   <p class="price" aria-label="Цена">25500 Р.</p>
                 </div>
@@ -587,7 +572,7 @@
                   </button>
                 </div>
               </article>
-              <article class="product-card catalog item-new">
+              <article class="product-card catalog new">
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <img
                   class="product-card-image bfg2000"
@@ -620,7 +605,7 @@
         <ul class="paginator">
           <li>
             <a
-              class="paginator-link active"
+              class="paginator-link active-page"
               aria-label="Перейти на текущую страницу каталога"
               >1</a
             >
@@ -707,7 +692,11 @@
       <div class="footer-1-wrapper">
         <div class="footer-1">
           <div class="footer-nav-1">
-            <a class="footer-logo" href="index.html" title="Логотип Техномарт"></a>
+            <a
+              class="footer-logo"
+              href="index.html"
+              title="Логотип Техномарт"
+            ></a>
 
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
