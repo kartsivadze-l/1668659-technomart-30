@@ -179,10 +179,14 @@ const slide2 = document.querySelector(".slide-2");
 arrowBack.addEventListener("click", function () {
   slide1.classList.toggle("current");
   slide2.classList.toggle("current");
+  circle1.classList.toggle("current-circle");
+  circle2.classList.toggle("current-circle");
 });
 arrowForward.addEventListener("click", function () {
   slide1.classList.toggle("current");
   slide2.classList.toggle("current");
+  circle1.classList.toggle("current-circle");
+  circle2.classList.toggle("current-circle");
 });
 
 circle1.addEventListener("click", function () {
